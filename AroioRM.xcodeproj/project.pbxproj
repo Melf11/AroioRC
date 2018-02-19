@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081012521EB87C4F0053EF17 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081012511EB87C4F0053EF17 /* CreditsViewController.swift */; };
+		081012581EB87E7A0053EF17 /* AroioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081012571EB87E7A0053EF17 /* AroioTableViewController.swift */; };
+		0810125A1EB888770053EF17 /* AroioTableConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081012591EB888770053EF17 /* AroioTableConfigViewController.swift */; };
+		08261AF51F5D470F00BFA3DC /* AddNewAroioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08261AF41F5D470F00BFA3DC /* AddNewAroioViewController.swift */; };
+		083B910D2035AC630058A711 /* BankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B910B2035AC630058A711 /* BankTableViewCell.swift */; };
+		083B910E2035AC630058A711 /* BankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083B910C2035AC630058A711 /* BankTableViewCell.xib */; };
+		0842F4461F16494000352524 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842F4441F16494000352524 /* AudioViewController.swift */; };
+		0842F4471F16494000352524 /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0842F4451F16494000352524 /* AudioViewController.xib */; };
+		0842F44A1F1649C300352524 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842F4481F1649C300352524 /* NetworkViewController.swift */; };
+		0842F44B1F1649C300352524 /* NetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0842F4491F1649C300352524 /* NetworkViewController.xib */; };
+		0842F44E1F1649CD00352524 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842F44C1F1649CD00352524 /* PlayerViewController.swift */; };
+		0842F44F1F1649CD00352524 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0842F44D1F1649CD00352524 /* PlayerViewController.xib */; };
+		0844DC2C1EB8726F008F5D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844DC2B1EB8726F008F5D8E /* AppDelegate.swift */; };
+		0844DC311EB8726F008F5D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0844DC2F1EB8726F008F5D8E /* Main.storyboard */; };
+		0844DC331EB8726F008F5D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0844DC321EB8726F008F5D8E /* Assets.xcassets */; };
+		0844DC361EB8726F008F5D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0844DC341EB8726F008F5D8E /* LaunchScreen.storyboard */; };
+		0844DC411EB8726F008F5D8E /* AroioRMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844DC401EB8726F008F5D8E /* AroioRMTests.swift */; };
+		087EAE2D1EDEE5D40099E689 /* BonjourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EAE2C1EDEE5D40099E689 /* BonjourTableViewCell.swift */; };
+		088E36281EB8B2DA00543ECC /* Aroio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E36271EB8B2DA00543ECC /* Aroio.swift */; };
+		088E362A1EB8B8EB00543ECC /* AroioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E36291EB8B8EB00543ECC /* AroioTableViewCell.swift */; };
+		089EEF991F166642005E52B2 /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEF981F166642005E52B2 /* SystemViewController.swift */; };
+		089EEF9C1F166653005E52B2 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEF9A1F166653005E52B2 /* UpdateViewController.swift */; };
+		089EEF9D1F166653005E52B2 /* UpdateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089EEF9B1F166653005E52B2 /* UpdateViewController.xib */; };
+		089EEFA01F166660005E52B2 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEF9E1F166660005E52B2 /* InformationViewController.swift */; };
+		089EEFA11F166660005E52B2 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089EEF9F1F166660005E52B2 /* InformationViewController.xib */; };
+		089EEFA31F166680005E52B2 /* MessurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEFA21F166680005E52B2 /* MessurementViewController.swift */; };
+		089EEFA61F166693005E52B2 /* RoomCorrectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEFA41F166693005E52B2 /* RoomCorrectionViewController.swift */; };
+		089EEFA71F166693005E52B2 /* RoomCorrectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089EEFA51F166693005E52B2 /* RoomCorrectionViewController.xib */; };
+		089EEFAA1F1666A0005E52B2 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEFA81F16669F005E52B2 /* GuideViewController.swift */; };
+		089EEFAB1F1666A0005E52B2 /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089EEFA91F1666A0005E52B2 /* GuideViewController.xib */; };
+		089EEFAD1F1666AE005E52B2 /* ConvolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEFAC1F1666AE005E52B2 /* ConvolverViewController.swift */; };
+		089EEFB01F1666F9005E52B2 /* ConvolverModulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEFAE1F1666F9005E52B2 /* ConvolverModulViewController.swift */; };
+		089EEFB11F1666F9005E52B2 /* ConvolverModulViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089EEFAF1F1666F9005E52B2 /* ConvolverModulViewController.xib */; };
+		089EEFB41F166713005E52B2 /* ExplanationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEFB21F166713005E52B2 /* ExplanationsViewController.swift */; };
+		089EEFB51F166713005E52B2 /* ExplanationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089EEFB31F166713005E52B2 /* ExplanationsViewController.xib */; };
+		08C7010E1F1627240037AD08 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7010D1F1627240037AD08 /* ConfigViewController.swift */; };
+		08CB587B1EE80A0200330F19 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB58781EE80A0200330F19 /* MenuViewController.swift */; };
+		08D5ADF22019F6AC002358D2 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D5ADF12019F6AC002358D2 /* ExternalAccessory.framework */; };
+		08F1A12D1FA1D20500D86009 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F1A12C1FA1D20500D86009 /* NetworkExtension.framework */; };
+		08FDF0A51EE8180F008CB277 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 08FDF0A41EE8180F008CB277 /* Podfile */; };
+		20FBAA99B756A256E132A3AE /* Pods_AroioRM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92835AB3AF7E390734996A8D /* Pods_AroioRM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0844DC3D1EB8726F008F5D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0844DC201EB8726F008F5D8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0844DC271EB8726F008F5D8E;
+			remoteInfo = AroioRM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081012511EB87C4F0053EF17 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		081012571EB87E7A0053EF17 /* AroioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroioTableViewController.swift; sourceTree = "<group>"; };
+		081012591EB888770053EF17 /* AroioTableConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroioTableConfigViewController.swift; sourceTree = "<group>"; };
+		08261AF41F5D470F00BFA3DC /* AddNewAroioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAroioViewController.swift; sourceTree = "<group>"; };
+		083B910B2035AC630058A711 /* BankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTableViewCell.swift; sourceTree = "<group>"; };
+		083B910C2035AC630058A711 /* BankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankTableViewCell.xib; sourceTree = "<group>"; };
+		0842F4441F16494000352524 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		0842F4451F16494000352524 /* AudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
+		0842F4481F1649C300352524 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		0842F4491F1649C300352524 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
+		0842F44C1F1649CD00352524 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		0842F44D1F1649CD00352524 /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
+		0844DC281EB8726F008F5D8E /* AroioRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroioRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0844DC2B1EB8726F008F5D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0844DC301EB8726F008F5D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0844DC321EB8726F008F5D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0844DC351EB8726F008F5D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0844DC371EB8726F008F5D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0844DC3C1EB8726F008F5D8E /* AroioRMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AroioRMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0844DC401EB8726F008F5D8E /* AroioRMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroioRMTests.swift; sourceTree = "<group>"; };
+		0844DC421EB8726F008F5D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087EAE2C1EDEE5D40099E689 /* BonjourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourTableViewCell.swift; sourceTree = "<group>"; };
+		088E36271EB8B2DA00543ECC /* Aroio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aroio.swift; sourceTree = "<group>"; };
+		088E36291EB8B8EB00543ECC /* AroioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroioTableViewCell.swift; sourceTree = "<group>"; };
+		089EEF981F166642005E52B2 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
+		089EEF9A1F166653005E52B2 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		089EEF9B1F166653005E52B2 /* UpdateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateViewController.xib; sourceTree = "<group>"; };
+		089EEF9E1F166660005E52B2 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		089EEF9F1F166660005E52B2 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
+		089EEFA21F166680005E52B2 /* MessurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessurementViewController.swift; sourceTree = "<group>"; };
+		089EEFA41F166693005E52B2 /* RoomCorrectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCorrectionViewController.swift; sourceTree = "<group>"; };
+		089EEFA51F166693005E52B2 /* RoomCorrectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCorrectionViewController.xib; sourceTree = "<group>"; };
+		089EEFA81F16669F005E52B2 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		089EEFA91F1666A0005E52B2 /* GuideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideViewController.xib; sourceTree = "<group>"; };
+		089EEFAC1F1666AE005E52B2 /* ConvolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvolverViewController.swift; sourceTree = "<group>"; };
+		089EEFAE1F1666F9005E52B2 /* ConvolverModulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvolverModulViewController.swift; sourceTree = "<group>"; };
+		089EEFAF1F1666F9005E52B2 /* ConvolverModulViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConvolverModulViewController.xib; sourceTree = "<group>"; };
+		089EEFB21F166713005E52B2 /* ExplanationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationsViewController.swift; sourceTree = "<group>"; };
+		089EEFB31F166713005E52B2 /* ExplanationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExplanationsViewController.xib; sourceTree = "<group>"; };
+		08BBEE371EE8495600B0653D /* AroioRM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AroioRM-Bridging-Header.h"; sourceTree = "<group>"; };
+		08C2BC0E1F60155400B6BE72 /* AroioRM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AroioRM.entitlements; sourceTree = "<group>"; };
+		08C7010D1F1627240037AD08 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		08CB58781EE80A0200330F19 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		08D5ADF12019F6AC002358D2 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		08F1A12C1FA1D20500D86009 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		08FDF0A41EE8180F008CB277 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		92835AB3AF7E390734996A8D /* Pods_AroioRM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroioRM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45FEC289A06AFA4DDFBA2BA /* Pods-AroioRM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroioRM.release.xcconfig"; path = "Pods/Target Support Files/Pods-AroioRM/Pods-AroioRM.release.xcconfig"; sourceTree = "<group>"; };
+		EC8318658ADDFA7C6FD67EA3 /* Pods-AroioRM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroioRM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AroioRM/Pods-AroioRM.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0844DC251EB8726F008F5D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D5ADF22019F6AC002358D2 /* ExternalAccessory.framework in Frameworks */,
+				20FBAA99B756A256E132A3AE /* Pods_AroioRM.framework in Frameworks */,
+				08F1A12D1FA1D20500D86009 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0844DC391EB8726F008F5D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0842F4501F1661D400352524 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				08C7010D1F1627240037AD08 /* ConfigViewController.swift */,
+				0842F4441F16494000352524 /* AudioViewController.swift */,
+				0842F4451F16494000352524 /* AudioViewController.xib */,
+				0842F4481F1649C300352524 /* NetworkViewController.swift */,
+				0842F4491F1649C300352524 /* NetworkViewController.xib */,
+				0842F44C1F1649CD00352524 /* PlayerViewController.swift */,
+				0842F44D1F1649CD00352524 /* PlayerViewController.xib */,
+			);
+			name = Config;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0844DC1F1EB8726F008F5D8E = {
+			isa = PBXGroup;
+			children = (
+				08FDF0A41EE8180F008CB277 /* Podfile */,
+				0844DC2A1EB8726F008F5D8E /* AroioRM */,
+				0844DC3F1EB8726F008F5D8E /* AroioRMTests */,
+				0844DC291EB8726F008F5D8E /* Products */,
+				CCD1A3D3E6AE9AF6C4A8055E /* Pods */,
+				3A88EE3544A02852FC7ED792 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0844DC291EB8726F008F5D8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0844DC281EB8726F008F5D8E /* AroioRM.app */,
+				0844DC3C1EB8726F008F5D8E /* AroioRMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0844DC2A1EB8726F008F5D8E /* AroioRM */ = {
+			isa = PBXGroup;
+			children = (
+				08C2BC0E1F60155400B6BE72 /* AroioRM.entitlements */,
+				0844DC2B1EB8726F008F5D8E /* AppDelegate.swift */,
+				088E36271EB8B2DA00543ECC /* Aroio.swift */,
+				088E36291EB8B8EB00543ECC /* AroioTableViewCell.swift */,
+				081012571EB87E7A0053EF17 /* AroioTableViewController.swift */,
+				081012591EB888770053EF17 /* AroioTableConfigViewController.swift */,
+				08261AF41F5D470F00BFA3DC /* AddNewAroioViewController.swift */,
+				087EAE2C1EDEE5D40099E689 /* BonjourTableViewCell.swift */,
+				08EB76F71F17851800CA43A1 /* MainMenu */,
+				081012511EB87C4F0053EF17 /* CreditsViewController.swift */,
+				0844DC2F1EB8726F008F5D8E /* Main.storyboard */,
+				0844DC321EB8726F008F5D8E /* Assets.xcassets */,
+				0844DC341EB8726F008F5D8E /* LaunchScreen.storyboard */,
+				0844DC371EB8726F008F5D8E /* Info.plist */,
+				08BBEE371EE8495600B0653D /* AroioRM-Bridging-Header.h */,
+			);
+			path = AroioRM;
+			sourceTree = "<group>";
+		};
+		0844DC3F1EB8726F008F5D8E /* AroioRMTests */ = {
+			isa = PBXGroup;
+			children = (
+				0844DC401EB8726F008F5D8E /* AroioRMTests.swift */,
+				0844DC421EB8726F008F5D8E /* Info.plist */,
+			);
+			path = AroioRMTests;
+			sourceTree = "<group>";
+		};
+		089EEF911F1665AE005E52B2 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				089EEF981F166642005E52B2 /* SystemViewController.swift */,
+				089EEF9A1F166653005E52B2 /* UpdateViewController.swift */,
+				089EEF9B1F166653005E52B2 /* UpdateViewController.xib */,
+				089EEF9E1F166660005E52B2 /* InformationViewController.swift */,
+				089EEF9F1F166660005E52B2 /* InformationViewController.xib */,
+			);
+			name = System;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		089EEF921F1665BD005E52B2 /* Messurement */ = {
+			isa = PBXGroup;
+			children = (
+				089EEFA21F166680005E52B2 /* MessurementViewController.swift */,
+				089EEFA41F166693005E52B2 /* RoomCorrectionViewController.swift */,
+				089EEFA51F166693005E52B2 /* RoomCorrectionViewController.xib */,
+				089EEFA81F16669F005E52B2 /* GuideViewController.swift */,
+				089EEFA91F1666A0005E52B2 /* GuideViewController.xib */,
+			);
+			name = Messurement;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		089EEF931F1665C6005E52B2 /* Convolver */ = {
+			isa = PBXGroup;
+			children = (
+				089EEFAC1F1666AE005E52B2 /* ConvolverViewController.swift */,
+				089EEFAE1F1666F9005E52B2 /* ConvolverModulViewController.swift */,
+				089EEFAF1F1666F9005E52B2 /* ConvolverModulViewController.xib */,
+				089EEFB21F166713005E52B2 /* ExplanationsViewController.swift */,
+				089EEFB31F166713005E52B2 /* ExplanationsViewController.xib */,
+				083B910B2035AC630058A711 /* BankTableViewCell.swift */,
+				083B910C2035AC630058A711 /* BankTableViewCell.xib */,
+			);
+			name = Convolver;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		08EB76F71F17851800CA43A1 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				08CB58781EE80A0200330F19 /* MenuViewController.swift */,
+				0842F4501F1661D400352524 /* Config */,
+				089EEF911F1665AE005E52B2 /* System */,
+				089EEF921F1665BD005E52B2 /* Messurement */,
+				089EEF931F1665C6005E52B2 /* Convolver */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		3A88EE3544A02852FC7ED792 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08D5ADF12019F6AC002358D2 /* ExternalAccessory.framework */,
+				08F1A12C1FA1D20500D86009 /* NetworkExtension.framework */,
+				92835AB3AF7E390734996A8D /* Pods_AroioRM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCD1A3D3E6AE9AF6C4A8055E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC8318658ADDFA7C6FD67EA3 /* Pods-AroioRM.debug.xcconfig */,
+				E45FEC289A06AFA4DDFBA2BA /* Pods-AroioRM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0844DC271EB8726F008F5D8E /* AroioRM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0844DC451EB8726F008F5D8E /* Build configuration list for PBXNativeTarget "AroioRM" */;
+			buildPhases = (
+				76ADF9B28E9936351FE6FB9A /* [CP] Check Pods Manifest.lock */,
+				0844DC241EB8726F008F5D8E /* Sources */,
+				0844DC251EB8726F008F5D8E /* Frameworks */,
+				0844DC261EB8726F008F5D8E /* Resources */,
+				17E01AC9F5409EB476C1A6D5 /* [CP] Embed Pods Frameworks */,
+				51FA3173137F74C0D4B12E30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AroioRM;
+			productName = AroioRM;
+			productReference = 0844DC281EB8726F008F5D8E /* AroioRM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0844DC3B1EB8726F008F5D8E /* AroioRMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0844DC481EB8726F008F5D8E /* Build configuration list for PBXNativeTarget "AroioRMTests" */;
+			buildPhases = (
+				0844DC381EB8726F008F5D8E /* Sources */,
+				0844DC391EB8726F008F5D8E /* Frameworks */,
+				0844DC3A1EB8726F008F5D8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0844DC3E1EB8726F008F5D8E /* PBXTargetDependency */,
+			);
+			name = AroioRMTests;
+			productName = AroioRMTests;
+			productReference = 0844DC3C1EB8726F008F5D8E /* AroioRMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0844DC201EB8726F008F5D8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "ABACUS electronics";
+				TargetAttributes = {
+					0844DC271EB8726F008F5D8E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9BY67WD4UB;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HotspotConfiguration = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
+					};
+					0844DC3B1EB8726F008F5D8E = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0844DC271EB8726F008F5D8E;
+					};
+				};
+			};
+			buildConfigurationList = 0844DC231EB8726F008F5D8E /* Build configuration list for PBXProject "AroioRM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0844DC1F1EB8726F008F5D8E;
+			productRefGroup = 0844DC291EB8726F008F5D8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0844DC271EB8726F008F5D8E /* AroioRM */,
+				0844DC3B1EB8726F008F5D8E /* AroioRMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0844DC261EB8726F008F5D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089EEFB11F1666F9005E52B2 /* ConvolverModulViewController.xib in Resources */,
+				089EEFA71F166693005E52B2 /* RoomCorrectionViewController.xib in Resources */,
+				0844DC361EB8726F008F5D8E /* LaunchScreen.storyboard in Resources */,
+				0842F44F1F1649CD00352524 /* PlayerViewController.xib in Resources */,
+				0844DC331EB8726F008F5D8E /* Assets.xcassets in Resources */,
+				089EEF9D1F166653005E52B2 /* UpdateViewController.xib in Resources */,
+				089EEFAB1F1666A0005E52B2 /* GuideViewController.xib in Resources */,
+				083B910E2035AC630058A711 /* BankTableViewCell.xib in Resources */,
+				0842F4471F16494000352524 /* AudioViewController.xib in Resources */,
+				089EEFA11F166660005E52B2 /* InformationViewController.xib in Resources */,
+				08FDF0A51EE8180F008CB277 /* Podfile in Resources */,
+				0844DC311EB8726F008F5D8E /* Main.storyboard in Resources */,
+				089EEFB51F166713005E52B2 /* ExplanationsViewController.xib in Resources */,
+				0842F44B1F1649C300352524 /* NetworkViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0844DC3A1EB8726F008F5D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17E01AC9F5409EB476C1A6D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AroioRM/Pods-AroioRM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/McPicker/McPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftWebVC/SwiftWebVC.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/McPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftWebVC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AroioRM/Pods-AroioRM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51FA3173137F74C0D4B12E30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AroioRM/Pods-AroioRM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76ADF9B28E9936351FE6FB9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AroioRM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0844DC241EB8726F008F5D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088E36281EB8B2DA00543ECC /* Aroio.swift in Sources */,
+				089EEFAA1F1666A0005E52B2 /* GuideViewController.swift in Sources */,
+				081012521EB87C4F0053EF17 /* CreditsViewController.swift in Sources */,
+				0844DC2C1EB8726F008F5D8E /* AppDelegate.swift in Sources */,
+				0842F44E1F1649CD00352524 /* PlayerViewController.swift in Sources */,
+				088E362A1EB8B8EB00543ECC /* AroioTableViewCell.swift in Sources */,
+				08CB587B1EE80A0200330F19 /* MenuViewController.swift in Sources */,
+				08C7010E1F1627240037AD08 /* ConfigViewController.swift in Sources */,
+				089EEFA31F166680005E52B2 /* MessurementViewController.swift in Sources */,
+				089EEFB41F166713005E52B2 /* ExplanationsViewController.swift in Sources */,
+				081012581EB87E7A0053EF17 /* AroioTableViewController.swift in Sources */,
+				089EEF991F166642005E52B2 /* SystemViewController.swift in Sources */,
+				087EAE2D1EDEE5D40099E689 /* BonjourTableViewCell.swift in Sources */,
+				0842F4461F16494000352524 /* AudioViewController.swift in Sources */,
+				0842F44A1F1649C300352524 /* NetworkViewController.swift in Sources */,
+				08261AF51F5D470F00BFA3DC /* AddNewAroioViewController.swift in Sources */,
+				083B910D2035AC630058A711 /* BankTableViewCell.swift in Sources */,
+				0810125A1EB888770053EF17 /* AroioTableConfigViewController.swift in Sources */,
+				089EEFA61F166693005E52B2 /* RoomCorrectionViewController.swift in Sources */,
+				089EEFAD1F1666AE005E52B2 /* ConvolverViewController.swift in Sources */,
+				089EEFB01F1666F9005E52B2 /* ConvolverModulViewController.swift in Sources */,
+				089EEF9C1F166653005E52B2 /* UpdateViewController.swift in Sources */,
+				089EEFA01F166660005E52B2 /* InformationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0844DC381EB8726F008F5D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0844DC411EB8726F008F5D8E /* AroioRMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0844DC3E1EB8726F008F5D8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0844DC271EB8726F008F5D8E /* AroioRM */;
+			targetProxy = 0844DC3D1EB8726F008F5D8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0844DC2F1EB8726F008F5D8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0844DC301EB8726F008F5D8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0844DC341EB8726F008F5D8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0844DC351EB8726F008F5D8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0844DC431EB8726F008F5D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hanno.sonder@abacus-electronics.de (8F5DADCF78)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "AroioRM/AroioRM-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0844DC441EB8726F008F5D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hanno.sonder@abacus-electronics.de (8F5DADCF78)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "AroioRM/AroioRM-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0844DC461EB8726F008F5D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8318658ADDFA7C6FD67EA3 /* Pods-AroioRM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AroioRM/AroioRM.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: melf.stoecken@googlemail.com (7F3SFZ4RV8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BY67WD4UB;
+				INFOPLIST_FILE = AroioRM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abacus.AroioRC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AroioRM/AroioRM-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0844DC471EB8726F008F5D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E45FEC289A06AFA4DDFBA2BA /* Pods-AroioRM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AroioRM/AroioRM.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: melf.stoecken@googlemail.com (7F3SFZ4RV8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BY67WD4UB;
+				INFOPLIST_FILE = AroioRM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abacus.AroioRC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AroioRM/AroioRM-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0844DC491EB8726F008F5D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AroioRMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abacus.AroioRMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AroioRM.app/AroioRM";
+			};
+			name = Debug;
+		};
+		0844DC4A1EB8726F008F5D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AroioRMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abacus.AroioRMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AroioRM.app/AroioRM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0844DC231EB8726F008F5D8E /* Build configuration list for PBXProject "AroioRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0844DC431EB8726F008F5D8E /* Debug */,
+				0844DC441EB8726F008F5D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0844DC451EB8726F008F5D8E /* Build configuration list for PBXNativeTarget "AroioRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0844DC461EB8726F008F5D8E /* Debug */,
+				0844DC471EB8726F008F5D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0844DC481EB8726F008F5D8E /* Build configuration list for PBXNativeTarget "AroioRMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0844DC491EB8726F008F5D8E /* Debug */,
+				0844DC4A1EB8726F008F5D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0844DC201EB8726F008F5D8E /* Project object */;
+}
