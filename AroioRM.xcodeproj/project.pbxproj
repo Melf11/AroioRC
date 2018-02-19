@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080EB78E203B5C2D0098582D /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080EB78D203B5C2D0098582D /* ConfigViewController.swift */; };
 		081012521EB87C4F0053EF17 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081012511EB87C4F0053EF17 /* CreditsViewController.swift */; };
 		081012581EB87E7A0053EF17 /* AroioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081012571EB87E7A0053EF17 /* AroioTableViewController.swift */; };
 		0810125A1EB888770053EF17 /* AroioTableConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081012591EB888770053EF17 /* AroioTableConfigViewController.swift */; };
@@ -42,7 +43,6 @@
 		089EEFB11F1666F9005E52B2 /* ConvolverModulViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089EEFAF1F1666F9005E52B2 /* ConvolverModulViewController.xib */; };
 		089EEFB41F166713005E52B2 /* ExplanationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EEFB21F166713005E52B2 /* ExplanationsViewController.swift */; };
 		089EEFB51F166713005E52B2 /* ExplanationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089EEFB31F166713005E52B2 /* ExplanationsViewController.xib */; };
-		08C7010E1F1627240037AD08 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7010D1F1627240037AD08 /* ConfigViewController.swift */; };
 		08CB587B1EE80A0200330F19 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB58781EE80A0200330F19 /* MenuViewController.swift */; };
 		08D5ADF22019F6AC002358D2 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D5ADF12019F6AC002358D2 /* ExternalAccessory.framework */; };
 		08F1A12D1FA1D20500D86009 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F1A12C1FA1D20500D86009 /* NetworkExtension.framework */; };
@@ -61,18 +61,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		080EB78D203B5C2D0098582D /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = MainMenu/Config/ConfigViewController.swift; sourceTree = "<group>"; };
 		081012511EB87C4F0053EF17 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		081012571EB87E7A0053EF17 /* AroioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroioTableViewController.swift; sourceTree = "<group>"; };
 		081012591EB888770053EF17 /* AroioTableConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroioTableConfigViewController.swift; sourceTree = "<group>"; };
 		08261AF41F5D470F00BFA3DC /* AddNewAroioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAroioViewController.swift; sourceTree = "<group>"; };
-		083B910B2035AC630058A711 /* BankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTableViewCell.swift; sourceTree = "<group>"; };
-		083B910C2035AC630058A711 /* BankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankTableViewCell.xib; sourceTree = "<group>"; };
-		0842F4441F16494000352524 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
-		0842F4451F16494000352524 /* AudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
-		0842F4481F1649C300352524 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
-		0842F4491F1649C300352524 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
-		0842F44C1F1649CD00352524 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		0842F44D1F1649CD00352524 /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
+		083B910B2035AC630058A711 /* BankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BankTableViewCell.swift; path = MainMenu/Convolver/BankTableViewCell.swift; sourceTree = "<group>"; };
+		083B910C2035AC630058A711 /* BankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BankTableViewCell.xib; path = MainMenu/Convolver/BankTableViewCell.xib; sourceTree = "<group>"; };
+		0842F4441F16494000352524 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioViewController.swift; path = MainMenu/Config/AudioViewController.swift; sourceTree = "<group>"; };
+		0842F4451F16494000352524 /* AudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AudioViewController.xib; path = MainMenu/Config/AudioViewController.xib; sourceTree = "<group>"; };
+		0842F4481F1649C300352524 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkViewController.swift; path = MainMenu/Config/NetworkViewController.swift; sourceTree = "<group>"; };
+		0842F4491F1649C300352524 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NetworkViewController.xib; path = MainMenu/Config/NetworkViewController.xib; sourceTree = "<group>"; };
+		0842F44C1F1649CD00352524 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerViewController.swift; path = MainMenu/Config/PlayerViewController.swift; sourceTree = "<group>"; };
+		0842F44D1F1649CD00352524 /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayerViewController.xib; path = MainMenu/Config/PlayerViewController.xib; sourceTree = "<group>"; };
 		0844DC281EB8726F008F5D8E /* AroioRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroioRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0844DC2B1EB8726F008F5D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0844DC301EB8726F008F5D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,24 +86,23 @@
 		087EAE2C1EDEE5D40099E689 /* BonjourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourTableViewCell.swift; sourceTree = "<group>"; };
 		088E36271EB8B2DA00543ECC /* Aroio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aroio.swift; sourceTree = "<group>"; };
 		088E36291EB8B8EB00543ECC /* AroioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroioTableViewCell.swift; sourceTree = "<group>"; };
-		089EEF981F166642005E52B2 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
-		089EEF9A1F166653005E52B2 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
-		089EEF9B1F166653005E52B2 /* UpdateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateViewController.xib; sourceTree = "<group>"; };
-		089EEF9E1F166660005E52B2 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
-		089EEF9F1F166660005E52B2 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
-		089EEFA21F166680005E52B2 /* MessurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessurementViewController.swift; sourceTree = "<group>"; };
-		089EEFA41F166693005E52B2 /* RoomCorrectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCorrectionViewController.swift; sourceTree = "<group>"; };
-		089EEFA51F166693005E52B2 /* RoomCorrectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCorrectionViewController.xib; sourceTree = "<group>"; };
-		089EEFA81F16669F005E52B2 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
-		089EEFA91F1666A0005E52B2 /* GuideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideViewController.xib; sourceTree = "<group>"; };
-		089EEFAC1F1666AE005E52B2 /* ConvolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvolverViewController.swift; sourceTree = "<group>"; };
-		089EEFAE1F1666F9005E52B2 /* ConvolverModulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvolverModulViewController.swift; sourceTree = "<group>"; };
-		089EEFAF1F1666F9005E52B2 /* ConvolverModulViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConvolverModulViewController.xib; sourceTree = "<group>"; };
-		089EEFB21F166713005E52B2 /* ExplanationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationsViewController.swift; sourceTree = "<group>"; };
-		089EEFB31F166713005E52B2 /* ExplanationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExplanationsViewController.xib; sourceTree = "<group>"; };
+		089EEF981F166642005E52B2 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SystemViewController.swift; path = MainMenu/System/SystemViewController.swift; sourceTree = "<group>"; };
+		089EEF9A1F166653005E52B2 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UpdateViewController.swift; path = MainMenu/System/UpdateViewController.swift; sourceTree = "<group>"; };
+		089EEF9B1F166653005E52B2 /* UpdateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UpdateViewController.xib; path = MainMenu/System/UpdateViewController.xib; sourceTree = "<group>"; };
+		089EEF9E1F166660005E52B2 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InformationViewController.swift; path = MainMenu/System/InformationViewController.swift; sourceTree = "<group>"; };
+		089EEF9F1F166660005E52B2 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = InformationViewController.xib; path = MainMenu/System/InformationViewController.xib; sourceTree = "<group>"; };
+		089EEFA21F166680005E52B2 /* MessurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessurementViewController.swift; path = MainMenu/Messurement/MessurementViewController.swift; sourceTree = "<group>"; };
+		089EEFA41F166693005E52B2 /* RoomCorrectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoomCorrectionViewController.swift; path = MainMenu/Messurement/RoomCorrectionViewController.swift; sourceTree = "<group>"; };
+		089EEFA51F166693005E52B2 /* RoomCorrectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RoomCorrectionViewController.xib; path = MainMenu/Messurement/RoomCorrectionViewController.xib; sourceTree = "<group>"; };
+		089EEFA81F16669F005E52B2 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GuideViewController.swift; path = MainMenu/Messurement/GuideViewController.swift; sourceTree = "<group>"; };
+		089EEFA91F1666A0005E52B2 /* GuideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GuideViewController.xib; path = MainMenu/Messurement/GuideViewController.xib; sourceTree = "<group>"; };
+		089EEFAC1F1666AE005E52B2 /* ConvolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConvolverViewController.swift; path = MainMenu/Convolver/ConvolverViewController.swift; sourceTree = "<group>"; };
+		089EEFAE1F1666F9005E52B2 /* ConvolverModulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConvolverModulViewController.swift; path = MainMenu/Convolver/ConvolverModulViewController.swift; sourceTree = "<group>"; };
+		089EEFAF1F1666F9005E52B2 /* ConvolverModulViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ConvolverModulViewController.xib; path = MainMenu/Convolver/ConvolverModulViewController.xib; sourceTree = "<group>"; };
+		089EEFB21F166713005E52B2 /* ExplanationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExplanationsViewController.swift; path = MainMenu/Convolver/ExplanationsViewController.swift; sourceTree = "<group>"; };
+		089EEFB31F166713005E52B2 /* ExplanationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExplanationsViewController.xib; path = MainMenu/Convolver/ExplanationsViewController.xib; sourceTree = "<group>"; };
 		08BBEE371EE8495600B0653D /* AroioRM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AroioRM-Bridging-Header.h"; sourceTree = "<group>"; };
 		08C2BC0E1F60155400B6BE72 /* AroioRM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AroioRM.entitlements; sourceTree = "<group>"; };
-		08C7010D1F1627240037AD08 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		08CB58781EE80A0200330F19 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		08D5ADF12019F6AC002358D2 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		08F1A12C1FA1D20500D86009 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
@@ -136,7 +136,7 @@
 		0842F4501F1661D400352524 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				08C7010D1F1627240037AD08 /* ConfigViewController.swift */,
+				080EB78D203B5C2D0098582D /* ConfigViewController.swift */,
 				0842F4441F16494000352524 /* AudioViewController.swift */,
 				0842F4451F16494000352524 /* AudioViewController.xib */,
 				0842F4481F1649C300352524 /* NetworkViewController.swift */,
@@ -467,12 +467,12 @@
 			files = (
 				088E36281EB8B2DA00543ECC /* Aroio.swift in Sources */,
 				089EEFAA1F1666A0005E52B2 /* GuideViewController.swift in Sources */,
+				080EB78E203B5C2D0098582D /* ConfigViewController.swift in Sources */,
 				081012521EB87C4F0053EF17 /* CreditsViewController.swift in Sources */,
 				0844DC2C1EB8726F008F5D8E /* AppDelegate.swift in Sources */,
 				0842F44E1F1649CD00352524 /* PlayerViewController.swift in Sources */,
 				088E362A1EB8B8EB00543ECC /* AroioTableViewCell.swift in Sources */,
 				08CB587B1EE80A0200330F19 /* MenuViewController.swift in Sources */,
-				08C7010E1F1627240037AD08 /* ConfigViewController.swift in Sources */,
 				089EEFA31F166680005E52B2 /* MessurementViewController.swift in Sources */,
 				089EEFB41F166713005E52B2 /* ExplanationsViewController.swift in Sources */,
 				081012581EB87E7A0053EF17 /* AroioTableViewController.swift in Sources */,
