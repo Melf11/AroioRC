@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExplanationsViewController" customModule="AroioRM" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ExplanationsView" customModule="AroioRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1B-yt-x3p">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NlR-dn-Lya">
+                            <rect key="frame" x="20" y="40" width="335" height="605"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="605" id="LGb-gj-uIT"/>
+                            </constraints>
+                            <mutableString key="text">Filterbänke:
+Per Klick auf den Pfeil im Dropdown-Menü kann aus den mit Aroio ausgelieferten Beispielfiltern oder Filtern, die über die Raumkorrektur-Software Acourate (http://www.audiovero.de) erstellt und hochgeladen wurden, ausgewählt werden. 
+
+Umschalten des Aktiven Filters:
+Durch Klick auf den Button Bank wird sofort auf die betreffende Filterbank umgeschaltet. 
+
+Notiz-Feld:
+Im Notizfeld kann ein beliebiger Kommentar zur Filterbank eingegeben werden.
+
+Anpassung unterschiedlich lauter Filter:
+Für jede Filterbank kann die Lautstärke in dB eingegeben werden. Vorsicht: Werte größer als 0dB führen unter Umständen zu Übersteuerung und Verzerrungen, es ist also zu empfehlen, die Lautstärke durch negative Werte anpassen, also das lauter wirkende Filter leiser zu machen.
+
+Speichern und neu laden:
+Klick auf Speichern und neu laden speichert die Filtersätze in den Filterbänken und lädt diese in die Convolution-Engine. Dies dauert ein paar Sekunden.
+
+Parameter setzen:
+Der Button Setze Parameter speichert die Notiz- und Lautstärke-Einstellungen und wendet diese sofort an.</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NlR-dn-Lya" firstAttribute="centerX" secondItem="U1B-yt-x3p" secondAttribute="centerX" id="74F-63-8LM"/>
+                        <constraint firstAttribute="bottom" secondItem="NlR-dn-Lya" secondAttribute="bottom" constant="22" id="a7K-Wh-wvA"/>
+                        <constraint firstItem="NlR-dn-Lya" firstAttribute="leading" secondItem="U1B-yt-x3p" secondAttribute="leading" constant="20" id="ami-Zk-kgz"/>
+                        <constraint firstItem="NlR-dn-Lya" firstAttribute="top" secondItem="U1B-yt-x3p" secondAttribute="top" constant="40" id="m1T-iQ-x1B"/>
+                        <constraint firstAttribute="trailing" secondItem="NlR-dn-Lya" secondAttribute="trailing" constant="20" id="r8W-A8-5Rb"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="U1B-yt-x3p" secondAttribute="bottom" id="B8Z-iD-gHq"/>
+                <constraint firstItem="U1B-yt-x3p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aBI-VA-qKe"/>
+                <constraint firstItem="U1B-yt-x3p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dvW-xd-sFi"/>
+                <constraint firstAttribute="trailing" secondItem="U1B-yt-x3p" secondAttribute="trailing" id="kC3-zV-sCr"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
