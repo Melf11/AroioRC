@@ -1,0 +1,1473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F9A4505ED74078EE1D8B45926FE28F /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = CD969E714535FCEA6B520420484C7018 /* yudpsocket.c */; };
+		077226F9503C384991EC8E7D75D88215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		12FACF2F99B6E6E6E6E4C51C3E28FD20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		134023426B880A30746AE2805DF7548A /* Pods-AroioRM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB3E5F4E80260C02A78EA989B7CE20B /* Pods-AroioRM-dummy.m */; };
+		16AA029A55FBE01A1F46403DE759DE1D /* McPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DB1A056F1808D66C705CA88B59ADB9 /* McPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EE8C32CAA4973A521D216DEC93A6B82 /* McPickerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE771D03C19374C9FC99BD2028FDBE0B /* McPickerBarButtonItem.swift */; };
+		2520BA0B3D4B7B077853BEC1DD8A7566 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3143622D255AAE7C76C03BA2F05A3135 /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
+		265F730B9F83C55003B3EB5A679A530B /* CAPSPageMenu+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6E6ECD9D6E4D4AC6EB51C0D9032FC /* CAPSPageMenu+UIConfiguration.swift */; };
+		2E8CA6C926CF8DABC57CD98405AB2BF7 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823AE7E98F868B2A1163A91FAB7B41F /* TCPClient.swift */; };
+		3213D73A0EB8F0393221E8E862B330D4 /* SwiftWebVC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 988D449112DD6AB2DECA784EA81AF94B /* SwiftWebVC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		338A217653F0FABD81CC08CB2E6E7644 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB38D47371C0BDC45E6B93B0E06E2DB /* Socket.swift */; };
+		33D75656A8E9F08773649DE1746BF774 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		375E82B9B2F032E7188A8A064D60A6E1 /* SwiftWebVCActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2010692FB99027E851E8D5A0F30339DB /* SwiftWebVCActivity.swift */; };
+		3F0B3BED808C58E726233DFE237DBCB9 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68240070C763EB554CFBA2FBDBF65AB /* MenuItemView.swift */; };
+		4CF26205FC3FDCA8867BD64A0F44F598 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273581428D83E51C108FF80A0826404B /* Result.swift */; };
+		51C4106DD5C877FCE94407A75F113370 /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94927DC3DBA48D6AF635E21ADD3B479A /* UDPClient.swift */; };
+		55278F754D3AEB503E42464E2FA67939 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 930AC1659C0E430542134731EBE59F5F /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		591C4F21EBC0E040BC070026BA12B80A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		61763225D97AC76DEDB8959903E7B160 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		656A5CD4629C5332B25482C2564EBF6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		6878BDDBC7E4E44BD22BCC878369CCE2 /* SwiftWebVCActivitySafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C1DF4278D2D20EF51C005A8E91A91 /* SwiftWebVCActivitySafari.swift */; };
+		7CC8948DE21E75CFAB7C16A685975ED8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69476B1C120F560086F0424AF893E66E /* Media.xcassets */; };
+		80824742E8E295006D102BD8BB3E8280 /* Pods-AroioRM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43785CB245FAC315E853A7BDEF01330A /* Pods-AroioRM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		835A019848E47BFE8324D3A54D705EFB /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069C1B738170961F2543CD572DA1A0F /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */; };
+		868CBB3B00D0E45D19A7F5494E5D5AEE /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1FB4005B699A6B5867D9AE517ECCC /* youtube-ios-player-helper-dummy.m */; };
+		8BBF26C7977D7BCD084EF070CF118759 /* McPickerPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D415ECF590560E78914831CD12D264 /* McPickerPopoverViewController.swift */; };
+		8C4B43887BB405EB59E1E166C17F8369 /* SwiftWebVCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACA64C713A085F4A9A83FBB00A5AC014 /* SwiftWebVCResources.bundle */; };
+		9112CFB3EFE5158CC1F8B90B31891242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		92CC8557183CBBAE414F63D0A87D2824 /* SwiftWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE45715CF7E05166E7AB26236A4976 /* SwiftWebVC.swift */; };
+		A2FC75F65E8697D6C900CDEF5AC23CA4 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F381BD166B129D3789EEF5EEA89F1801 /* CAPSPageMenu.swift */; };
+		A8179B19DDA0A59DDFAA23CF3F34695E /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A0CE69A40A1DA568687E773BBA4C7F /* CAPSPageMenuConfiguration.swift */; };
+		A908AF7A811EDAFC540674BCA7C14FCC /* PageMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E1DECC7323920811A89CE3BA1E81B6 /* PageMenu-dummy.m */; };
+		A9095BFF8BD73B572371BDF398F6EA95 /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 687ABC81DDA22BB666511194485BC3C3 /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB88EB2427D3DFCF990830E39CBD38F0 /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DC297D2D6285305B7DCB8CA016250B /* SwiftSocket-dummy.m */; };
+		AE514F8BE8902A2F73FBB8504227ADC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		B44A80ABB4CCCB8B852F9D2825035771 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E51F0C8C1E53C39ADD5B02813B388E2 /* Assets.bundle */; };
+		B5D3B54A1B0250BDFCECCBCAEFFA69CE /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C11C22D4767C8A0F12CFA41CBB754423 /* YTPlayerView.m */; };
+		C0808E59A17BD0F66022B535A164B5CD /* McPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4816C12DFEA3C0216968E4B947DC775B /* McPicker-dummy.m */; };
+		CBF1E744C22CB778E4FD1FC4072AFDDA /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = DE33921752EB5DED20AC795A4C5DCCC2 /* ytcpsocket.c */; };
+		CEAC693A3580DB797F9197A487C84841 /* SwiftWebVCActivityChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807A8461EF76744236C961A504804B6 /* SwiftWebVCActivityChrome.swift */; };
+		CF10E78D6DF84D472F415382DE2115B3 /* PageMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4EE1C13869786FF3AA612DDFE323CF0 /* PageMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB37C372E59E7E240B27A4C8B4DBC713 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69476B1C120F560086F0424AF893E66E /* Media.xcassets */; };
+		DE4D2E9742BFEB4AE00D058CF731F5FB /* SwiftModalWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841E7D559B120CCE63F4C6413A4887A /* SwiftModalWebVC.swift */; };
+		E406B86BB37591A3D0316592DB9E9884 /* McPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7881425796602ECE29ADDFA0D0B690F /* McPicker.swift */; };
+		EA5CA36C2E5A0DC8D497D5A4F983117E /* CAPSPageMenu+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67305F425A0C2AE133CE6AD146B44784 /* CAPSPageMenu+Options.swift */; };
+		EF4EB29D01FB26DBF3A11D26B43C89CB /* SwiftWebVC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D912238892C6EC540BCAB4B149E750 /* SwiftWebVC-dummy.m */; };
+		F0269468604FE641C0A14337230CAE43 /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0316DB23F20CD7F8BBD18659239CC9E9 /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		255770B1748E7C21C80E5065C3AA8301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 978A447F57E812AEE5D676FF361F1416;
+			remoteInfo = PageMenu;
+		};
+		3611A9DBA74C37185896A2D5CD68B302 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00490B0324FA9E14A93FF97B3C94804;
+			remoteInfo = "youtube-ios-player-helper";
+		};
+		7D7F31D251C793DF59FA1B228DD136AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 594CFD192FFF0760962CBE076BA5528A;
+			remoteInfo = "SwiftWebVC-SwiftWebVCResources";
+		};
+		A9CE62369AAC2A6B8D45813458C45BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B2F85728FE4A50B81B6994BEBC10F9;
+			remoteInfo = McPicker;
+		};
+		DBB0F39C56EE54CC2263C0D31DD5B2F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 310E9CE95422AC5E164DA595C8226FCC;
+			remoteInfo = SwiftSocket;
+		};
+		E6232503BB4D85B11EBBF937014B70A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EE22C65038D68CF708E1CD9FC36C800;
+			remoteInfo = SwiftWebVC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A1395DC89D77FD1328B8449660D0F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0316DB23F20CD7F8BBD18659239CC9E9 /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
+		05E1DECC7323920811A89CE3BA1E81B6 /* PageMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PageMenu-dummy.m"; sourceTree = "<group>"; };
+		082F43F674BC2A5315FB5DA25B60E33C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0841E7D559B120CCE63F4C6413A4887A /* SwiftModalWebVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftModalWebVC.swift; path = SwiftWebVC/SwiftModalWebVC.swift; sourceTree = "<group>"; };
+		0D306E6222707BA3A2109A8FF8B40AAB /* ResourceBundle-SwiftWebVCResources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftWebVCResources-Info.plist"; sourceTree = "<group>"; };
+		140777165B379BFC8025EC18413EDA37 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
+		14539599D1CBC5FE38BDAC0E10840DCE /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = youtube_ios_player_helper.framework; path = "youtube-ios-player-helper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F115444AC52B553FA2E0C8AE30258CD /* youtube-ios-player-helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.xcconfig"; sourceTree = "<group>"; };
+		2010692FB99027E851E8D5A0F30339DB /* SwiftWebVCActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftWebVCActivity.swift; path = SwiftWebVC/SwiftWebVCActivity.swift; sourceTree = "<group>"; };
+		273581428D83E51C108FF80A0826404B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		3143622D255AAE7C76C03BA2F05A3135 /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIScrollViewDelegate.swift"; path = "Classes/CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		321376E2E276FC19871822209A5FBD89 /* Pods-AroioRM-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AroioRM-acknowledgements.plist"; sourceTree = "<group>"; };
+		32F6E6ECD9D6E4D4AC6EB51C0D9032FC /* CAPSPageMenu+UIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIConfiguration.swift"; path = "Classes/CAPSPageMenu+UIConfiguration.swift"; sourceTree = "<group>"; };
+		3E56C2E869C55AEC0A0EC7ADFB33BE60 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSocket.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AAD094C31DBB751EE4D5DC2B5A1BB2 /* SwiftWebVC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebVC-prefix.pch"; sourceTree = "<group>"; };
+		43785CB245FAC315E853A7BDEF01330A /* Pods-AroioRM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AroioRM-umbrella.h"; sourceTree = "<group>"; };
+		4816C12DFEA3C0216968E4B947DC775B /* McPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McPicker-dummy.m"; sourceTree = "<group>"; };
+		49D415ECF590560E78914831CD12D264 /* McPickerPopoverViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerPopoverViewController.swift; path = McPicker/Classes/McPickerPopoverViewController.swift; sourceTree = "<group>"; };
+		5BDA0B1B4CB7593ACD868A179657C01F /* Pods-AroioRM-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AroioRM-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C63C6C480C586FE6DE1154E832CAA87 /* Pods-AroioRM-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AroioRM-frameworks.sh"; sourceTree = "<group>"; };
+		5C74A372354E5A89DAC069218B7C3402 /* Pods_AroioRM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AroioRM.framework; path = "Pods-AroioRM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E51F0C8C1E53C39ADD5B02813B388E2 /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = "youtube-ios-player-helper/Assets.bundle"; sourceTree = "<group>"; };
+		61A0CE69A40A1DA568687E773BBA4C7F /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAPSPageMenuConfiguration.swift; path = Classes/CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
+		67305F425A0C2AE133CE6AD146B44784 /* CAPSPageMenu+Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+Options.swift"; path = "Classes/CAPSPageMenu+Options.swift"; sourceTree = "<group>"; };
+		687ABC81DDA22BB666511194485BC3C3 /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
+		69476B1C120F560086F0424AF893E66E /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = SwiftWebVC/Resources/Media.xcassets; sourceTree = "<group>"; };
+		6A8D6CD12DEB342402FBD871B1186E0E /* McPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = McPicker.framework; path = McPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DC297D2D6285305B7DCB8CA016250B /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		8AE1FB4005B699A6B5867D9AE517ECCC /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
+		8C2506128CF2711DAF7E65A0C69C2A6D /* McPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-prefix.pch"; sourceTree = "<group>"; };
+		8EFE45715CF7E05166E7AB26236A4976 /* SwiftWebVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftWebVC.swift; path = SwiftWebVC/SwiftWebVC.swift; sourceTree = "<group>"; };
+		930AC1659C0E430542134731EBE59F5F /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94927DC3DBA48D6AF635E21ADD3B479A /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
+		95F79DAC3FC67463AB21E788710653A8 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
+		988D449112DD6AB2DECA784EA81AF94B /* SwiftWebVC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebVC-umbrella.h"; sourceTree = "<group>"; };
+		9AB02FA2FCC391C171F212D018520C4E /* SwiftWebVC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftWebVC.modulemap; sourceTree = "<group>"; };
+		A1A3C586E5EB4042F18FD115649ED5CF /* PageMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PageMenu.xcconfig; sourceTree = "<group>"; };
+		A1E95704160E8A9F95D8BF61F1A58244 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2771B24C407DB3228448E8EEE8AE14A /* SwiftWebVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftWebVC.framework; path = SwiftWebVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68240070C763EB554CFBA2FBDBF65AB /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Classes/MenuItemView.swift; sourceTree = "<group>"; };
+		A7881425796602ECE29ADDFA0D0B690F /* McPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPicker.swift; path = McPicker/Classes/McPicker.swift; sourceTree = "<group>"; };
+		A8C2AE078F09B1773F5FD7F213D4678D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1C1DF4278D2D20EF51C005A8E91A91 /* SwiftWebVCActivitySafari.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftWebVCActivitySafari.swift; path = SwiftWebVC/SwiftWebVCActivitySafari.swift; sourceTree = "<group>"; };
+		ACA64C713A085F4A9A83FBB00A5AC014 /* SwiftWebVCResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SwiftWebVCResources.bundle; path = SwiftWebVCResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF007F6B9EF0648AB2650311D984852F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D7571E8BFB50774F26FAB655D42321 /* PageMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageMenu-prefix.pch"; sourceTree = "<group>"; };
+		B4EE1C13869786FF3AA612DDFE323CF0 /* PageMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageMenu-umbrella.h"; sourceTree = "<group>"; };
+		B504A1A85BBE7F5D0F2F461B7857DE7E /* Pods-AroioRM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AroioRM.debug.xcconfig"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B94E3615F15B45257BD911FED3070911 /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
+		BEF8D5FDADA67EE3B3032096CFB00115 /* SwiftWebVC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftWebVC.xcconfig; sourceTree = "<group>"; };
+		C11C22D4767C8A0F12CFA41CBB754423 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
+		C807A8461EF76744236C961A504804B6 /* SwiftWebVCActivityChrome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftWebVCActivityChrome.swift; path = SwiftWebVC/SwiftWebVCActivityChrome.swift; sourceTree = "<group>"; };
+		CA0E2EA3537367FED278D8E6A0B668CD /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PageMenu.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD969E714535FCEA6B520420484C7018 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
+		CEE58F268FF1DD84F9914C1685EE884F /* Pods-AroioRM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AroioRM.modulemap"; sourceTree = "<group>"; };
+		D1EC73258C3B96EA6F2410C5B12674EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB33F53D8852E6A36340EA54100C975D /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		DE33921752EB5DED20AC795A4C5DCCC2 /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
+		E069C1B738170961F2543CD572DA1A0F /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIGestureRecognizerDelegate.swift"; path = "Classes/CAPSPageMenu+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		E7D912238892C6EC540BCAB4B149E750 /* SwiftWebVC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftWebVC-dummy.m"; sourceTree = "<group>"; };
+		EAD4054FE6E6C52CBFC4235F90A18F32 /* PageMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PageMenu.modulemap; sourceTree = "<group>"; };
+		F0DB1A056F1808D66C705CA88B59ADB9 /* McPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-umbrella.h"; sourceTree = "<group>"; };
+		F0E03EC03AC1EBEF8785FE3F18B64A17 /* Pods-AroioRM-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AroioRM-resources.sh"; sourceTree = "<group>"; };
+		F381BD166B129D3789EEF5EEA89F1801 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAPSPageMenu.swift; path = Classes/CAPSPageMenu.swift; sourceTree = "<group>"; };
+		F823AE7E98F868B2A1163A91FAB7B41F /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
+		F940536BD0ADDBC6417DB32FA0E80A89 /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		FB60BD3726D120A2B193EAAA56D834E8 /* McPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = McPicker.modulemap; sourceTree = "<group>"; };
+		FBB3E5F4E80260C02A78EA989B7CE20B /* Pods-AroioRM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AroioRM-dummy.m"; sourceTree = "<group>"; };
+		FD514B1BA6017C8D3D15FD16A6360B0D /* Pods-AroioRM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AroioRM.release.xcconfig"; sourceTree = "<group>"; };
+		FDFACB3387C4480C970CC95603D002A0 /* McPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McPicker.xcconfig; sourceTree = "<group>"; };
+		FE771D03C19374C9FC99BD2028FDBE0B /* McPickerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerBarButtonItem.swift; path = McPicker/Classes/McPickerBarButtonItem.swift; sourceTree = "<group>"; };
+		FFB38D47371C0BDC45E6B93B0E06E2DB /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C669C1BBB7EF1264D44DEAA3A391140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE514F8BE8902A2F73FBB8504227ADC0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B97314E819C6B1F50B6710C9B93F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9112CFB3EFE5158CC1F8B90B31891242 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A88137883D6819DA0C1E1F96A21409E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FACF2F99B6E6E6E6E4C51C3E28FD20 /* Foundation.framework in Frameworks */,
+				61763225D97AC76DEDB8959903E7B160 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16738B75791133026909EB9349A297D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D75656A8E9F08773649DE1746BF774 /* Foundation.framework in Frameworks */,
+				591C4F21EBC0E040BC070026BA12B80A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41FD87362950F31641AB3A82BE73AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F338BBE04A3A8A6A6CFB222A2A22AE13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077226F9503C384991EC8E7D75D88215 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F685073A79BB156149E191339D557F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656A5CD4629C5332B25482C2564EBF6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12772538EB07B6F05A0EF11750D86973 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2AE078F09B1773F5FD7F213D4678D /* Info.plist */,
+				FB60BD3726D120A2B193EAAA56D834E8 /* McPicker.modulemap */,
+				FDFACB3387C4480C970CC95603D002A0 /* McPicker.xcconfig */,
+				4816C12DFEA3C0216968E4B947DC775B /* McPicker-dummy.m */,
+				8C2506128CF2711DAF7E65A0C69C2A6D /* McPicker-prefix.pch */,
+				F0DB1A056F1808D66C705CA88B59ADB9 /* McPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/McPicker";
+			sourceTree = "<group>";
+		};
+		2C2D6A53B6B3A4DFB4B6C4BF15FFB74E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00A1395DC89D77FD1328B8449660D0F5 /* Info.plist */,
+				140777165B379BFC8025EC18413EDA37 /* youtube-ios-player-helper.modulemap */,
+				1F115444AC52B553FA2E0C8AE30258CD /* youtube-ios-player-helper.xcconfig */,
+				8AE1FB4005B699A6B5867D9AE517ECCC /* youtube-ios-player-helper-dummy.m */,
+				95F79DAC3FC67463AB21E788710653A8 /* youtube-ios-player-helper-prefix.pch */,
+				930AC1659C0E430542134731EBE59F5F /* youtube-ios-player-helper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		2D17CCBE93660B5413A066105B164DBD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E96C79A5286E4CD14499CD52DD02526 /* Pods-AroioRM */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4D9DC0E9E7B6FC17A400FF5AD47AF2B2 /* McPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A7881425796602ECE29ADDFA0D0B690F /* McPicker.swift */,
+				FE771D03C19374C9FC99BD2028FDBE0B /* McPickerBarButtonItem.swift */,
+				49D415ECF590560E78914831CD12D264 /* McPickerPopoverViewController.swift */,
+				12772538EB07B6F05A0EF11750D86973 /* Support Files */,
+			);
+			name = McPicker;
+			path = McPicker;
+			sourceTree = "<group>";
+		};
+		50B743EAA7F8C1404F2B9DC025A56BEB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				082F43F674BC2A5315FB5DA25B60E33C /* Info.plist */,
+				0D306E6222707BA3A2109A8FF8B40AAB /* ResourceBundle-SwiftWebVCResources-Info.plist */,
+				9AB02FA2FCC391C171F212D018520C4E /* SwiftWebVC.modulemap */,
+				BEF8D5FDADA67EE3B3032096CFB00115 /* SwiftWebVC.xcconfig */,
+				E7D912238892C6EC540BCAB4B149E750 /* SwiftWebVC-dummy.m */,
+				41AAD094C31DBB751EE4D5DC2B5A1BB2 /* SwiftWebVC-prefix.pch */,
+				988D449112DD6AB2DECA784EA81AF94B /* SwiftWebVC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftWebVC";
+			sourceTree = "<group>";
+		};
+		520803E40E9828E268E696C87A6A4C7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69476B1C120F560086F0424AF893E66E /* Media.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5D5E36E4209EA64F007C054D53F4D284 /* youtube-ios-player-helper */ = {
+			isa = PBXGroup;
+			children = (
+				687ABC81DDA22BB666511194485BC3C3 /* YTPlayerView.h */,
+				C11C22D4767C8A0F12CFA41CBB754423 /* YTPlayerView.m */,
+				C52D190320548465D430800AB560FC2B /* Resources */,
+				2C2D6A53B6B3A4DFB4B6C4BF15FFB74E /* Support Files */,
+			);
+			name = "youtube-ios-player-helper";
+			path = "youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		6E96C79A5286E4CD14499CD52DD02526 /* Pods-AroioRM */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC73258C3B96EA6F2410C5B12674EA /* Info.plist */,
+				CEE58F268FF1DD84F9914C1685EE884F /* Pods-AroioRM.modulemap */,
+				5BDA0B1B4CB7593ACD868A179657C01F /* Pods-AroioRM-acknowledgements.markdown */,
+				321376E2E276FC19871822209A5FBD89 /* Pods-AroioRM-acknowledgements.plist */,
+				FBB3E5F4E80260C02A78EA989B7CE20B /* Pods-AroioRM-dummy.m */,
+				5C63C6C480C586FE6DE1154E832CAA87 /* Pods-AroioRM-frameworks.sh */,
+				F0E03EC03AC1EBEF8785FE3F18B64A17 /* Pods-AroioRM-resources.sh */,
+				43785CB245FAC315E853A7BDEF01330A /* Pods-AroioRM-umbrella.h */,
+				B504A1A85BBE7F5D0F2F461B7857DE7E /* Pods-AroioRM.debug.xcconfig */,
+				FD514B1BA6017C8D3D15FD16A6360B0D /* Pods-AroioRM.release.xcconfig */,
+			);
+			name = "Pods-AroioRM";
+			path = "Target Support Files/Pods-AroioRM";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				A8F04EFDAD22922C9CC0764CE2B18C67 /* Pods */,
+				FDABB40C6E71044AB335C1317CF9F821 /* Products */,
+				2D17CCBE93660B5413A066105B164DBD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8237928C62691732B65FEE43F0F6EB61 /* SwiftSocket */ = {
+			isa = PBXGroup;
+			children = (
+				273581428D83E51C108FF80A0826404B /* Result.swift */,
+				FFB38D47371C0BDC45E6B93B0E06E2DB /* Socket.swift */,
+				F823AE7E98F868B2A1163A91FAB7B41F /* TCPClient.swift */,
+				94927DC3DBA48D6AF635E21ADD3B479A /* UDPClient.swift */,
+				DE33921752EB5DED20AC795A4C5DCCC2 /* ytcpsocket.c */,
+				CD969E714535FCEA6B520420484C7018 /* yudpsocket.c */,
+				F40661A61BA37E546992AB14DB386BFC /* Support Files */,
+			);
+			name = SwiftSocket;
+			path = SwiftSocket;
+			sourceTree = "<group>";
+		};
+		8FBA5D1F4201A70B038427EEE4E2B3FE /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F381BD166B129D3789EEF5EEA89F1801 /* CAPSPageMenu.swift */,
+				67305F425A0C2AE133CE6AD146B44784 /* CAPSPageMenu+Options.swift */,
+				32F6E6ECD9D6E4D4AC6EB51C0D9032FC /* CAPSPageMenu+UIConfiguration.swift */,
+				E069C1B738170961F2543CD572DA1A0F /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */,
+				3143622D255AAE7C76C03BA2F05A3135 /* CAPSPageMenu+UIScrollViewDelegate.swift */,
+				61A0CE69A40A1DA568687E773BBA4C7F /* CAPSPageMenuConfiguration.swift */,
+				A68240070C763EB554CFBA2FBDBF65AB /* MenuItemView.swift */,
+				991E19FDBAE4D8361564E5BC54B3EB27 /* Support Files */,
+			);
+			name = PageMenu;
+			path = PageMenu;
+			sourceTree = "<group>";
+		};
+		991E19FDBAE4D8361564E5BC54B3EB27 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF007F6B9EF0648AB2650311D984852F /* Info.plist */,
+				EAD4054FE6E6C52CBFC4235F90A18F32 /* PageMenu.modulemap */,
+				A1A3C586E5EB4042F18FD115649ED5CF /* PageMenu.xcconfig */,
+				05E1DECC7323920811A89CE3BA1E81B6 /* PageMenu-dummy.m */,
+				B0D7571E8BFB50774F26FAB655D42321 /* PageMenu-prefix.pch */,
+				B4EE1C13869786FF3AA612DDFE323CF0 /* PageMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PageMenu";
+			sourceTree = "<group>";
+		};
+		A8F04EFDAD22922C9CC0764CE2B18C67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D9DC0E9E7B6FC17A400FF5AD47AF2B2 /* McPicker */,
+				8FBA5D1F4201A70B038427EEE4E2B3FE /* PageMenu */,
+				8237928C62691732B65FEE43F0F6EB61 /* SwiftSocket */,
+				D72CEB7849C74BBCFC92E54E9823AA29 /* SwiftWebVC */,
+				5D5E36E4209EA64F007C054D53F4D284 /* youtube-ios-player-helper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C52D190320548465D430800AB560FC2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E51F0C8C1E53C39ADD5B02813B388E2 /* Assets.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D72CEB7849C74BBCFC92E54E9823AA29 /* SwiftWebVC */ = {
+			isa = PBXGroup;
+			children = (
+				0841E7D559B120CCE63F4C6413A4887A /* SwiftModalWebVC.swift */,
+				8EFE45715CF7E05166E7AB26236A4976 /* SwiftWebVC.swift */,
+				2010692FB99027E851E8D5A0F30339DB /* SwiftWebVCActivity.swift */,
+				C807A8461EF76744236C961A504804B6 /* SwiftWebVCActivityChrome.swift */,
+				AC1C1DF4278D2D20EF51C005A8E91A91 /* SwiftWebVCActivitySafari.swift */,
+				520803E40E9828E268E696C87A6A4C7D /* Resources */,
+				50B743EAA7F8C1404F2B9DC025A56BEB /* Support Files */,
+			);
+			name = SwiftWebVC;
+			path = SwiftWebVC;
+			sourceTree = "<group>";
+		};
+		F40661A61BA37E546992AB14DB386BFC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1E95704160E8A9F95D8BF61F1A58244 /* Info.plist */,
+				B94E3615F15B45257BD911FED3070911 /* SwiftSocket.modulemap */,
+				DB33F53D8852E6A36340EA54100C975D /* SwiftSocket.xcconfig */,
+				71DC297D2D6285305B7DCB8CA016250B /* SwiftSocket-dummy.m */,
+				F940536BD0ADDBC6417DB32FA0E80A89 /* SwiftSocket-prefix.pch */,
+				0316DB23F20CD7F8BBD18659239CC9E9 /* SwiftSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSocket";
+			sourceTree = "<group>";
+		};
+		FDABB40C6E71044AB335C1317CF9F821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A8D6CD12DEB342402FBD871B1186E0E /* McPicker.framework */,
+				CA0E2EA3537367FED278D8E6A0B668CD /* PageMenu.framework */,
+				5C74A372354E5A89DAC069218B7C3402 /* Pods_AroioRM.framework */,
+				3E56C2E869C55AEC0A0EC7ADFB33BE60 /* SwiftSocket.framework */,
+				A2771B24C407DB3228448E8EEE8AE14A /* SwiftWebVC.framework */,
+				ACA64C713A085F4A9A83FBB00A5AC014 /* SwiftWebVCResources.bundle */,
+				14539599D1CBC5FE38BDAC0E10840DCE /* youtube_ios_player_helper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36088EE97FF2DE57BA5FA0EC4A3643A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16AA029A55FBE01A1F46403DE759DE1D /* McPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42B176AA4AB7397D7CF5567994529549 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80824742E8E295006D102BD8BB3E8280 /* Pods-AroioRM-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C83F4273753995EFEEA9A74E317BDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0269468604FE641C0A14337230CAE43 /* SwiftSocket-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0F599F0A8D69E3722B0040EAA382159 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55278F754D3AEB503E42464E2FA67939 /* youtube-ios-player-helper-umbrella.h in Headers */,
+				A9095BFF8BD73B572371BDF398F6EA95 /* YTPlayerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF03216B56796EAEF26041733FDD894 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF10E78D6DF84D472F415382DE2115B3 /* PageMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D763AB4EC89CC28401F7C34CB7FE7643 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3213D73A0EB8F0393221E8E862B330D4 /* SwiftWebVC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15B2F85728FE4A50B81B6994BEBC10F9 /* McPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7754C4242313E9D29951F5ACD69ADF3 /* Build configuration list for PBXNativeTarget "McPicker" */;
+			buildPhases = (
+				0D2BAA0117D3ADF9E727DF7DF16A2126 /* Sources */,
+				9A88137883D6819DA0C1E1F96A21409E /* Frameworks */,
+				36088EE97FF2DE57BA5FA0EC4A3643A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = McPicker;
+			productName = McPicker;
+			productReference = 6A8D6CD12DEB342402FBD871B1186E0E /* McPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		310E9CE95422AC5E164DA595C8226FCC /* SwiftSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A90794777D95E0DBB2F4551B0B27C81 /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
+			buildPhases = (
+				44AF9265EBD00C222D45AA2E6B1E7D01 /* Sources */,
+				86B97314E819C6B1F50B6710C9B93F2F /* Frameworks */,
+				49C83F4273753995EFEEA9A74E317BDC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSocket;
+			productName = SwiftSocket;
+			productReference = 3E56C2E869C55AEC0A0EC7ADFB33BE60 /* SwiftSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		594CFD192FFF0760962CBE076BA5528A /* SwiftWebVC-SwiftWebVCResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9096F28A986B5814381BB975F6A635 /* Build configuration list for PBXNativeTarget "SwiftWebVC-SwiftWebVCResources" */;
+			buildPhases = (
+				71DBB95796A3DF1252CB48CEC3C12B7D /* Sources */,
+				D41FD87362950F31641AB3A82BE73AE0 /* Frameworks */,
+				1101282ABA8F691B71A8A816F8D94A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftWebVC-SwiftWebVCResources";
+			productName = "SwiftWebVC-SwiftWebVCResources";
+			productReference = ACA64C713A085F4A9A83FBB00A5AC014 /* SwiftWebVCResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6182278C1B1898C9D01540F5B8952253 /* Pods-AroioRM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B5446976253DB614372453D78F95BE /* Build configuration list for PBXNativeTarget "Pods-AroioRM" */;
+			buildPhases = (
+				02BFB98CE09ACFDE46E5A599E5876E5B /* Sources */,
+				F685073A79BB156149E191339D557F93 /* Frameworks */,
+				42B176AA4AB7397D7CF5567994529549 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E982E2AC236B560748F75CB2264E2468 /* PBXTargetDependency */,
+				7982CF1DDAB44544CFE7952750BBF859 /* PBXTargetDependency */,
+				B0A99D81E95CE070B9A6668E45D0BDD9 /* PBXTargetDependency */,
+				5C6257640F39EFF8C588A7271D421916 /* PBXTargetDependency */,
+				8142A2634D25BC74E7A41DE8CBF1B1CC /* PBXTargetDependency */,
+			);
+			name = "Pods-AroioRM";
+			productName = "Pods-AroioRM";
+			productReference = 5C74A372354E5A89DAC069218B7C3402 /* Pods_AroioRM.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EE22C65038D68CF708E1CD9FC36C800 /* SwiftWebVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64FC9631AF43DEEE0328A853360D350 /* Build configuration list for PBXNativeTarget "SwiftWebVC" */;
+			buildPhases = (
+				CCA9768371C1393CE7B9D6951AED38CA /* Sources */,
+				F338BBE04A3A8A6A6CFB222A2A22AE13 /* Frameworks */,
+				BE439D5D48C1E9F17894CED18331A81B /* Resources */,
+				D763AB4EC89CC28401F7C34CB7FE7643 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E73E0EF410D55F067E26BAD9CC25C4D8 /* PBXTargetDependency */,
+			);
+			name = SwiftWebVC;
+			productName = SwiftWebVC;
+			productReference = A2771B24C407DB3228448E8EEE8AE14A /* SwiftWebVC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		978A447F57E812AEE5D676FF361F1416 /* PageMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A22EC3FB70D83A97E35C74253D82A3BD /* Build configuration list for PBXNativeTarget "PageMenu" */;
+			buildPhases = (
+				57DFF7D5F5EB5198DDC0A90DFDE54CB2 /* Sources */,
+				D16738B75791133026909EB9349A297D /* Frameworks */,
+				BCF03216B56796EAEF26041733FDD894 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PageMenu;
+			productName = PageMenu;
+			productReference = CA0E2EA3537367FED278D8E6A0B668CD /* PageMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B00490B0324FA9E14A93FF97B3C94804 /* youtube-ios-player-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9E6124B21A53CC1ED78C8843054172A /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */;
+			buildPhases = (
+				641B209AD7CBA6806A0F5FE6B3D0CA32 /* Sources */,
+				4C669C1BBB7EF1264D44DEAA3A391140 /* Frameworks */,
+				B0F599F0A8D69E3722B0040EAA382159 /* Headers */,
+				7544B06A725011CC89666960D73F7407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "youtube-ios-player-helper";
+			productName = "youtube-ios-player-helper";
+			productReference = 14539599D1CBC5FE38BDAC0E10840DCE /* youtube_ios_player_helper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FDABB40C6E71044AB335C1317CF9F821 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15B2F85728FE4A50B81B6994BEBC10F9 /* McPicker */,
+				978A447F57E812AEE5D676FF361F1416 /* PageMenu */,
+				6182278C1B1898C9D01540F5B8952253 /* Pods-AroioRM */,
+				310E9CE95422AC5E164DA595C8226FCC /* SwiftSocket */,
+				6EE22C65038D68CF708E1CD9FC36C800 /* SwiftWebVC */,
+				594CFD192FFF0760962CBE076BA5528A /* SwiftWebVC-SwiftWebVCResources */,
+				B00490B0324FA9E14A93FF97B3C94804 /* youtube-ios-player-helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1101282ABA8F691B71A8A816F8D94A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8948DE21E75CFAB7C16A685975ED8 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7544B06A725011CC89666960D73F7407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44A80ABB4CCCB8B852F9D2825035771 /* Assets.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE439D5D48C1E9F17894CED18331A81B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB37C372E59E7E240B27A4C8B4DBC713 /* Media.xcassets in Resources */,
+				8C4B43887BB405EB59E1E166C17F8369 /* SwiftWebVCResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02BFB98CE09ACFDE46E5A599E5876E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134023426B880A30746AE2805DF7548A /* Pods-AroioRM-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D2BAA0117D3ADF9E727DF7DF16A2126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0808E59A17BD0F66022B535A164B5CD /* McPicker-dummy.m in Sources */,
+				E406B86BB37591A3D0316592DB9E9884 /* McPicker.swift in Sources */,
+				1EE8C32CAA4973A521D216DEC93A6B82 /* McPickerBarButtonItem.swift in Sources */,
+				8BBF26C7977D7BCD084EF070CF118759 /* McPickerPopoverViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44AF9265EBD00C222D45AA2E6B1E7D01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF26205FC3FDCA8867BD64A0F44F598 /* Result.swift in Sources */,
+				338A217653F0FABD81CC08CB2E6E7644 /* Socket.swift in Sources */,
+				AB88EB2427D3DFCF990830E39CBD38F0 /* SwiftSocket-dummy.m in Sources */,
+				2E8CA6C926CF8DABC57CD98405AB2BF7 /* TCPClient.swift in Sources */,
+				51C4106DD5C877FCE94407A75F113370 /* UDPClient.swift in Sources */,
+				CBF1E744C22CB778E4FD1FC4072AFDDA /* ytcpsocket.c in Sources */,
+				06F9A4505ED74078EE1D8B45926FE28F /* yudpsocket.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57DFF7D5F5EB5198DDC0A90DFDE54CB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5CA36C2E5A0DC8D497D5A4F983117E /* CAPSPageMenu+Options.swift in Sources */,
+				265F730B9F83C55003B3EB5A679A530B /* CAPSPageMenu+UIConfiguration.swift in Sources */,
+				835A019848E47BFE8324D3A54D705EFB /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
+				2520BA0B3D4B7B077853BEC1DD8A7566 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
+				A2FC75F65E8697D6C900CDEF5AC23CA4 /* CAPSPageMenu.swift in Sources */,
+				A8179B19DDA0A59DDFAA23CF3F34695E /* CAPSPageMenuConfiguration.swift in Sources */,
+				3F0B3BED808C58E726233DFE237DBCB9 /* MenuItemView.swift in Sources */,
+				A908AF7A811EDAFC540674BCA7C14FCC /* PageMenu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641B209AD7CBA6806A0F5FE6B3D0CA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868CBB3B00D0E45D19A7F5494E5D5AEE /* youtube-ios-player-helper-dummy.m in Sources */,
+				B5D3B54A1B0250BDFCECCBCAEFFA69CE /* YTPlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71DBB95796A3DF1252CB48CEC3C12B7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA9768371C1393CE7B9D6951AED38CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE4D2E9742BFEB4AE00D058CF731F5FB /* SwiftModalWebVC.swift in Sources */,
+				EF4EB29D01FB26DBF3A11D26B43C89CB /* SwiftWebVC-dummy.m in Sources */,
+				92CC8557183CBBAE414F63D0A87D2824 /* SwiftWebVC.swift in Sources */,
+				375E82B9B2F032E7188A8A064D60A6E1 /* SwiftWebVCActivity.swift in Sources */,
+				CEAC693A3580DB797F9197A487C84841 /* SwiftWebVCActivityChrome.swift in Sources */,
+				6878BDDBC7E4E44BD22BCC878369CCE2 /* SwiftWebVCActivitySafari.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C6257640F39EFF8C588A7271D421916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftWebVC;
+			target = 6EE22C65038D68CF708E1CD9FC36C800 /* SwiftWebVC */;
+			targetProxy = E6232503BB4D85B11EBBF937014B70A7 /* PBXContainerItemProxy */;
+		};
+		7982CF1DDAB44544CFE7952750BBF859 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PageMenu;
+			target = 978A447F57E812AEE5D676FF361F1416 /* PageMenu */;
+			targetProxy = 255770B1748E7C21C80E5065C3AA8301 /* PBXContainerItemProxy */;
+		};
+		8142A2634D25BC74E7A41DE8CBF1B1CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "youtube-ios-player-helper";
+			target = B00490B0324FA9E14A93FF97B3C94804 /* youtube-ios-player-helper */;
+			targetProxy = 3611A9DBA74C37185896A2D5CD68B302 /* PBXContainerItemProxy */;
+		};
+		B0A99D81E95CE070B9A6668E45D0BDD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSocket;
+			target = 310E9CE95422AC5E164DA595C8226FCC /* SwiftSocket */;
+			targetProxy = DBB0F39C56EE54CC2263C0D31DD5B2F2 /* PBXContainerItemProxy */;
+		};
+		E73E0EF410D55F067E26BAD9CC25C4D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftWebVC-SwiftWebVCResources";
+			target = 594CFD192FFF0760962CBE076BA5528A /* SwiftWebVC-SwiftWebVCResources */;
+			targetProxy = 7D7F31D251C793DF59FA1B228DD136AB /* PBXContainerItemProxy */;
+		};
+		E982E2AC236B560748F75CB2264E2468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = McPicker;
+			target = 15B2F85728FE4A50B81B6994BEBC10F9 /* McPicker */;
+			targetProxy = A9CE62369AAC2A6B8D45813458C45BDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		191D15E1B69AB427564AC097917365E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF8D5FDADA67EE3B3032096CFB00115 /* SwiftWebVC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWebVC/SwiftWebVC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWebVC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftWebVC/SwiftWebVC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftWebVC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26FE8F5EA71A132A073D00ABFC92E6AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF8D5FDADA67EE3B3032096CFB00115 /* SwiftWebVC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWebVC/SwiftWebVC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWebVC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftWebVC/SwiftWebVC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftWebVC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D932477CD13D33035CF2B6ECB7AE47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF8D5FDADA67EE3B3032096CFB00115 /* SwiftWebVC.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftWebVC";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SwiftWebVC/ResourceBundle-SwiftWebVCResources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SwiftWebVCResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		46A51D3A0F9AFC800C3A0E4866B6FDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B504A1A85BBE7F5D0F2F461B7857DE7E /* Pods-AroioRM.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AroioRM/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AroioRM/Pods-AroioRM.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AroioRM;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4CDC918CE47299839DFDF296702F3909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F115444AC52B553FA2E0C8AE30258CD /* youtube-ios-player-helper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		580D57316C73AEC79C74847771F23A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F115444AC52B553FA2E0C8AE30258CD /* youtube-ios-player-helper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2069246B56BCC0331D86ED168693AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A3C586E5EB4042F18FD115649ED5CF /* PageMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PageMenu/PageMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PageMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PageMenu/PageMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PageMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B284EDCBF03753A2273BB9AB3883C7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDFACB3387C4480C970CC95603D002A0 /* McPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/McPicker/McPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/McPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/McPicker/McPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = McPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B33C2FD5B313AD993EA48DC159E4EB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB33F53D8852E6A36340EA54100C975D /* SwiftSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA40D1388852792CCF6496699DCB2C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB33F53D8852E6A36340EA54100C975D /* SwiftSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C42B400BB4A33F6EA3BB17715F6D4362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDFACB3387C4480C970CC95603D002A0 /* McPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/McPicker/McPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/McPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/McPicker/McPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = McPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CABD7319E4B3E996A3ED1C02D80FA3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A3C586E5EB4042F18FD115649ED5CF /* PageMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PageMenu/PageMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PageMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PageMenu/PageMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PageMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D31BDABF7733568048E73164AA507965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD514B1BA6017C8D3D15FD16A6360B0D /* Pods-AroioRM.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AroioRM/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AroioRM/Pods-AroioRM.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AroioRM;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E798301EA21E21E8E3C80630DB5DB092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF8D5FDADA67EE3B3032096CFB00115 /* SwiftWebVC.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftWebVC";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SwiftWebVC/ResourceBundle-SwiftWebVCResources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SwiftWebVCResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */,
+				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B5446976253DB614372453D78F95BE /* Build configuration list for PBXNativeTarget "Pods-AroioRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A51D3A0F9AFC800C3A0E4866B6FDEE /* Debug */,
+				D31BDABF7733568048E73164AA507965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A90794777D95E0DBB2F4551B0B27C81 /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA40D1388852792CCF6496699DCB2C41 /* Debug */,
+				B33C2FD5B313AD993EA48DC159E4EB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9096F28A986B5814381BB975F6A635 /* Build configuration list for PBXNativeTarget "SwiftWebVC-SwiftWebVCResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E798301EA21E21E8E3C80630DB5DB092 /* Debug */,
+				2D932477CD13D33035CF2B6ECB7AE47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A22EC3FB70D83A97E35C74253D82A3BD /* Build configuration list for PBXNativeTarget "PageMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CABD7319E4B3E996A3ED1C02D80FA3E6 /* Debug */,
+				B2069246B56BCC0331D86ED168693AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7754C4242313E9D29951F5ACD69ADF3 /* Build configuration list for PBXNativeTarget "McPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B284EDCBF03753A2273BB9AB3883C7A2 /* Debug */,
+				C42B400BB4A33F6EA3BB17715F6D4362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9E6124B21A53CC1ED78C8843054172A /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580D57316C73AEC79C74847771F23A34 /* Debug */,
+				4CDC918CE47299839DFDF296702F3909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64FC9631AF43DEEE0328A853360D350 /* Build configuration list for PBXNativeTarget "SwiftWebVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191D15E1B69AB427564AC097917365E3 /* Debug */,
+				26FE8F5EA71A132A073D00ABFC92E6AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
