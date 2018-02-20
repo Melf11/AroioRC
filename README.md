@@ -6,6 +6,11 @@ This App is a Remotecontroll for the settingssection on ABACUS-electronics Aroio
 - if you want to use Simulator or native iOS 10 or lower, follow instructions in AddNewAroioViewController.swift at MARK: "for iOS 10 or lower"
 - if you want to become a TestFlight Beta Tester please mail me at melf.stoecken@gmail.com
 
+- in aroioOS put AroioOSextensions in "/mnt/mmcblk0p1/custom_overlay/" via sftp and reboot, after reboot connect via ssh and run
+```
+perl /appReceiver.pl
+```
+
 Screenshot Examples:
 
 <p align="center">
