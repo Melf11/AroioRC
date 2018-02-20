@@ -10,6 +10,7 @@ This App is a Remotecontroll for the settingssection on ABACUS-electronics Aroio
 ```
 perl /appReceiver.pl
 ```
+to watch a through the app video download AppThrough.mp4
 
 Screenshot Examples:
 
@@ -19,7 +20,3 @@ Screenshot Examples:
   <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_Network.JPG" width="350"/>
   <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_TableView.JPG" width="350"/>
 </p>
-
-AppThrough Video:
-
-<video src="https://github.com/Melf11/AroioRC/blob/master/AppThrough.mp4" width="320" height="200" controls preload></video>
