@@ -148,15 +148,15 @@ class AudioView: UIView, UITextFieldDelegate{
     @IBAction func hardwareEnvironment(_ sender: UIButton) {
         
         
-        let data: [[String]] = [["AroioLT","AroioSU", "AroioSU"]]
+        let data: [[String]] = [["AroioLT","AroioSU", "AroioSU", "AroioEX"]]
         
-        let soundPicker = McPicker(data: data)
-        soundPicker.toolbarButtonsColor = .white
-        soundPicker.toolbarBarTintColor = UIColor(red:0.00, green:0.67, blue:0.67, alpha:1.0)
+        let hardwarePicker = McPicker(data: data)
+        hardwarePicker.toolbarButtonsColor = .white
+        hardwarePicker.toolbarBarTintColor = UIColor(red:0.00, green:0.67, blue:0.67, alpha:1.0)
         
-        soundPicker.show {  (selections: [Int : String]) -> Void in
+        hardwarePicker.show {  (selections: [Int : String]) -> Void in
             if let name = selections[0] {
-                self.soundDevice.setTitle(name, for: .normal)
+                self.hardwareEnvironmentButton.setTitle(name, for: .normal)
                 AroioObject.aroio?.sendRequestToSocket(request: "PLATFORM", newValue: name)
             }
         }

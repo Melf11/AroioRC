@@ -57,7 +57,6 @@
                             </state>
                             <connections>
                                 <action selector="hardwareEnvironment:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="yed-5Y-EOs"/>
-                                <action selector="soundDevice:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="7bb-bH-6UM"/>
                             </connections>
                         </button>
                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00F-MA-32M">
