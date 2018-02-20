@@ -22,4 +22,4 @@ Screenshot Examples:
 
 AppThrough Video:
 
-<video src="AppThrough.mp4" width="320" height="200" controls preload></video>
+<video src="https://github.com/Melf11/AroioRC/blob/master/AppThrough.mp4" width="320" height="200" controls preload></video>
