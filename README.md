@@ -8,7 +8,9 @@ This App is a Remotecontroll for the settingssection on ABACUS-electronics Aroio
 
 Screenshot Examples:
 
-![alt text](https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_AddWiFiHotspot.JPG)
-![alt text](https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_Convolution.JPG)
-![alt text](https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_Network.JPG)
-![alt text](https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_TableView.JPG)
+<p align="center">
+  <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_AddWiFiHotspot.JPG" width="350"/>
+  <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_Convolution.JPG" width="350"/>
+  <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_Network.JPG" width="350"/>
+  <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_TableView.JPG" width="350"/>
+</p>
