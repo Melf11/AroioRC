@@ -5,3 +5,12 @@ This App is a Remotecontroll for the settingssection on ABACUS-electronics Aroio
 - This app is in beta state, you can clone it an run it on iOS 11 devices (no simulator) with "AroioRM.xcworkspace" in Xcode, you have to change path in Podfile to your folder
 - if you want to use Simulator or native iOS 10 or lower, follow instructions in AddNewAroioViewController.swift at MARK: "for iOS 10 or lower"
 - if you want to become a TestFlight Beta Tester please mail me at melf.stoecken@gmail.com
+
+Screenshot Examples:
+
+<p align="center">
+  <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_AddWiFiHotspot.JPG" width="350"/>
+  <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_Convolution.JPG" width="350"/>
+  <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_Network.JPG" width="350"/>
+  <img src="https://github.com/Melf11/AroioRC/blob/master/Scrennshots/02_IPad_TableView.JPG" width="350"/>
+</p>
