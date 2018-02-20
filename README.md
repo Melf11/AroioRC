@@ -1,6 +1,6 @@
 # AroioRC
 
-This App is a Remotecontroll for the settingssection on <a href="https://www.abacus-electronics.de/produkte/streaming/aroioos.html">ABACUS-electronics AroioOS</a> products. Without an aroio product you can navigate through the app but there will be no functionality. 
+This App is a remotecontrol for the settings section on <a href="https://www.abacus-electronics.de/produkte/streaming/aroioos.html">ABACUS-electronics AroioOS</a> products. Without an aroio product you can navigate through the app but there will be no functionality. 
 This app is in beta state and there is some more beautification and a few functionalitys left.
 
 Thank you!
