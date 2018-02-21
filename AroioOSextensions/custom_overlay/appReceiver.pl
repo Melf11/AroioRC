@@ -34,7 +34,10 @@ while (my $client = $server -> accept()){
         
         if ($action eq "change"){
             print "run appcommand with parameters to change userconfig\n";
-            qx(appcommand $request $message);
+            qx(cardmount rw);
+            qx(sed -i.bak 's/^$request=.*/$request=\"$message\"/' /mnt/mmcblk0p1/userconfig.txt);
+            qx(cardmount ro);
+            
         } elsif ($action eq "response"){
             print "run response and answer\n";
             if ($request eq "UPDATESERVER"){

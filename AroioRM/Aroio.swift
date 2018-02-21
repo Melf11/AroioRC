@@ -77,8 +77,7 @@ class Aroio: NSObject, NSCoding {
                 return true
                 
             case .failure(let error):
-                
-                os_log("error as! StaticString", log: OSLog.default, type: .debug)
+               print(error)
                 return false
             }
         }
@@ -93,7 +92,7 @@ class Aroio: NSObject, NSCoding {
     
     func getUserconfigParameter(request: String) -> String{
 
-        let response = "response;\(request);default\n"
+        let response = "response;\(request);default;\n"
         let data: Data = response.data(using: String.Encoding.utf8)!
         switch client.send(data: data) {
         case .success:
@@ -126,7 +125,7 @@ class Aroio: NSObject, NSCoding {
     // \n has to be at the end to seperate the different requests
     func sendRequestToSocket(request: String, newValue: String){
 
-        let response = "change;\(request);\(newValue)\n"
+        let response = "change;\(request);\(newValue);\n"
         let data = response.data(using: String.Encoding.utf8)!
         
         switch client.send(data: data) {
