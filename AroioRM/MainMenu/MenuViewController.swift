@@ -13,34 +13,36 @@ import os.log
 
 let lightGrey = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
 let lightBlue = UIColor(red:0.00, green:0.75, blue:0.75, alpha:1.0)
+let darkRed  = UIColor(red:0.70, green:0.10, blue:0.10, alpha:1.0)
 
-class MenuViewController: UITabBarController{
+class MenuViewController: UITabBarController {
    
-    let lightGrey = UIColor(red:0.82, green:0.82, blue:0.82, alpha:1.0)
-    
+ 
     //Method mainly to initiate and pass data from AroioTableView to the whole menu
     override func viewDidLoad() {
+        
+
         super.viewDidLoad()
+        
         
 //        AroioObject.aroio?.connectToSocket()
         
         if (AroioObject.aroio?.connectToSocket())! {
-
             let alert = UIAlertController(title: "Verbindungsstatus", message: "Die Verbindung zum \(AroioObject.aroio?.hostName ?? "Aroio") ist aufgebaut.", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            
             os_log("socket connection successful", log: OSLog.default, type: .debug)
         } else {
 
+           
+            
             let alert = UIAlertController(title: "Verbindungsstatus", message: "Die Verbindung zum \(AroioObject.aroio?.hostName ?? "Aroio") kann nicht aufgebaut werden. Bitte die Netzwerkverbindung des \(AroioObject.aroio?.hostName ?? "Aroio") checken und ggf. das Gerät erneut hinzufügen anhand der \"Finde Aroio's\"-Funktion", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.destructive, handler: { action in
                 
-                self.navigationController?.navigationBar.barTintColor = self.lightGrey
+                self.navigationController?.navigationBar.barTintColor = darkRed
                 self.navigationController?.navigationBar.topItem?.title = "Nicht mit \(AroioObject.aroio?.hostName ?? "Aroio") verbunden"
             }))
             self.present(alert, animated: true, completion: nil)
-            
             os_log("socket connection failure", log: OSLog.default, type: .error)
         }
         
