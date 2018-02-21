@@ -46,6 +46,8 @@ class AroioTableViewController: UITableViewController {
             
         }
         
+        self.refreshControl?.addTarget(self, action: #selector(refresh), for: UIControlEvents.valueChanged)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -84,9 +86,6 @@ class AroioTableViewController: UITableViewController {
             cell.imageView?.image = UIImage(named: "Offline")!
             aroio.disconnectFromSocket()
         }
-        
-        
-        
         
         cell.contentView.isUserInteractionEnabled = false;
         
@@ -312,7 +311,11 @@ class AroioTableViewController: UITableViewController {
         }
     }
     
-    
+    @objc func refresh(sender:AnyObject)
+    {
+        self.tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+    }
     
     //MARK: Private Methods
 
