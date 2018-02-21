@@ -20,12 +20,10 @@ class MenuViewController: UITabBarController {
  
     //Method mainly to initiate and pass data from AroioTableView to the whole menu
     override func viewDidLoad() {
-        
 
         super.viewDidLoad()
-        
-        
-//        AroioObject.aroio?.connectToSocket()
+
+        DispatchQueue.global(qos: .background).async {
         
         if (AroioObject.aroio?.connectToSocket())! {
             let alert = UIAlertController(title: "Verbindungsstatus", message: "Die Verbindung zum \(AroioObject.aroio?.hostName ?? "Aroio") ist aufgebaut.", preferredStyle: UIAlertControllerStyle.alert)
@@ -46,9 +44,9 @@ class MenuViewController: UITabBarController {
             os_log("socket connection failure", log: OSLog.default, type: .error)
         }
         
-        navigationItem.title  = AroioObject.aroio?.hostName
+        self.navigationItem.title  = AroioObject.aroio?.hostName
     }
-    
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
