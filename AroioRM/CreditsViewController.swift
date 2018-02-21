@@ -37,7 +37,8 @@ class CreditsViewController: UIViewController {
     //MARK: Actions
     
     @IBAction func developerButtonPressed(_ sender: UIButton) {
-        UIApplication.shared.open(NSURL(string: "http://stillleben.media")! as URL)
+        let webVC = SwiftModalWebVC(urlString: "https://github.com/Melf11/AroioRC")
+        self.present(webVC, animated: true, completion: nil)
     }
     @IBAction func abacusButtonPressed(_ sender: UIButton) {
         let webVC = SwiftModalWebVC(urlString: "https://www.abacus-electronics.de")
