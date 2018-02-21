@@ -23,8 +23,6 @@ class MenuViewController: UITabBarController {
 
         super.viewDidLoad()
 
-        DispatchQueue.global(qos: .background).async {
-        
         if (AroioObject.aroio?.connectToSocket())! {
             let alert = UIAlertController(title: "Verbindungsstatus", message: "Die Verbindung zum \(AroioObject.aroio?.hostName ?? "Aroio") ist aufgebaut.", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
@@ -32,8 +30,6 @@ class MenuViewController: UITabBarController {
             os_log("socket connection successful", log: OSLog.default, type: .debug)
         } else {
 
-           
-            
             let alert = UIAlertController(title: "Verbindungsstatus", message: "Die Verbindung zum \(AroioObject.aroio?.hostName ?? "Aroio") kann nicht aufgebaut werden. Bitte die Netzwerkverbindung des \(AroioObject.aroio?.hostName ?? "Aroio") checken und ggf. das Gerät erneut hinzufügen anhand der \"Finde Aroio's\"-Funktion", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.destructive, handler: { action in
                 
@@ -46,7 +42,7 @@ class MenuViewController: UITabBarController {
         
         self.navigationItem.title  = AroioObject.aroio?.hostName
     }
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
