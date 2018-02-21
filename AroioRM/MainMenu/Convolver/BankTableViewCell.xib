@@ -26,9 +26,6 @@
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NR3-nJ-wyt">
                         <rect key="frame" x="6" y="6" width="498" height="31"/>
                         <color key="onTintColor" red="0.0" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <connections>
-                            <action selector="bankSwitchPressed:" destination="KGk-i7-Jjw" eventType="valueChanged" id="kRG-XR-Enm"/>
-                        </connections>
                     </switch>
                     <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l4n-ou-po3">
                         <rect key="frame" x="65" y="7" width="140" height="30"/>
@@ -38,9 +35,6 @@
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
-                        <connections>
-                            <action selector="bankNoteTextFieldUsed:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="ian-Zf-r9w"/>
-                        </connections>
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWI-bw-ppK">
                         <rect key="frame" x="222" y="9" width="150" height="26"/>
@@ -53,9 +47,6 @@
                         <state key="normal" title="Button">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
-                        <connections>
-                            <action selector="bankFilterSelectionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ty4-EH-3ca"/>
-                        </connections>
                     </button>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCP-wG-MlU">
                         <rect key="frame" x="412" y="7" width="50" height="30"/>
@@ -65,9 +56,6 @@
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
-                        <connections>
-                            <action selector="bankVolumeTextFieldUsed:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="5Y8-oJ-3Ah"/>
-                        </connections>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkZ-6L-mXn">
                         <rect key="frame" x="470" y="12" width="22" height="20"/>
