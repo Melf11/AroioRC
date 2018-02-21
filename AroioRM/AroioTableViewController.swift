@@ -74,8 +74,19 @@ class AroioTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? AroioTableViewCell else {
             fatalError("The dequeued cell is not an instance of AroioTableViewCell")
         }
-        
+
         let aroio = aroios[indexPath.row]
+        
+        if aroio.connectToSocket() {
+            cell.imageView?.image = UIImage(named: "Online")!
+            aroio.disconnectFromSocket()
+        } else {
+            cell.imageView?.image = UIImage(named: "Offline")!
+            aroio.disconnectFromSocket()
+        }
+        
+        
+        
         
         cell.contentView.isUserInteractionEnabled = false;
         

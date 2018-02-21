@@ -15,6 +15,7 @@ class AroioTableViewCell: UITableViewCell {
     @IBOutlet weak var hostNameLabel: UILabel!
     @IBOutlet weak var ipAddrLabel: UILabel!
     @IBOutlet weak var playerNameLabel: UILabel!
+    @IBOutlet weak var onlineImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
