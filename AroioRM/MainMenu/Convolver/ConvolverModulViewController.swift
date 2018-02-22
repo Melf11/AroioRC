@@ -72,13 +72,16 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
     }
     
     @IBAction func preFilter(_ sender: UISwitch) {
+        if self.convolutionSwitch.isOn == true {
+            self.bankTableView.reloadData()
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "LOAD_PREFILTER", newValue: "ON")
+        } else {
+            self.bankTableView.reloadData()
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "LOAD_PREFILTER", newValue: "OFF")
+        }
     }
     
     @IBAction func mutePressed(_ sender: UIButton) {
-    }
-    @IBAction func setParameterPressed(_ sender: UIButton) {
-    }
-    @IBAction func saveAndReloadPressed(_ sender: UIButton) {
     }
 
     // MARK: - Table view data source
