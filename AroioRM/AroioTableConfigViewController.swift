@@ -69,25 +69,28 @@ class AroioTableConfigViewController: UIViewController, UITextFieldDelegate, UIT
         bonjourTableView.delegate = self
         bonjourTableView.dataSource = self
 
+        hostnameTextField.returnKeyType = .next
+        hostnameTextField.tag = 0
+        
         ip0TextField.delegate = self
         ip0TextField.keyboardType = .numberPad
         ip0TextField.returnKeyType = .next
-        ip0TextField.tag = 0
+        ip0TextField.tag = 1
         
         ip1TextField.delegate = self
         ip1TextField.keyboardType = .numberPad
         ip1TextField.returnKeyType = .next
-        ip1TextField.tag = 1
+        ip1TextField.tag = 2
         
         ip2TextField.delegate = self
         ip2TextField.keyboardType = .numberPad
         ip2TextField.returnKeyType = .next
-        ip2TextField.tag = 2
+        ip2TextField.tag = 3
         
         ip3TextField.delegate = self
         ip3TextField.keyboardType = .numberPad
         ip3TextField.returnKeyType = .done
-        ip3TextField.tag = 3
+        ip3TextField.tag = 4
         
         // setup views if editing an existing meal
         if let aroio = aroio {
@@ -292,7 +295,14 @@ class AroioTableConfigViewController: UIViewController, UITextFieldDelegate, UIT
         return string == filtered
     }
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField{
+            nextField.becomeFirstResponder()
+        }else {
+            textField.resignFirstResponder()
+        }
+        return false
+    }
     
     //MARK: Private Mathods
     
