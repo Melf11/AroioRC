@@ -42,31 +42,41 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWl-jJ-jut">
-                                            <rect key="frame" x="280.5" y="58.5" width="38.5" height="21"/>
+                                            <rect key="frame" x="280" y="59" width="39" height="21"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgn-6w-9NX">
-                                            <rect key="frame" x="75" y="37" width="33" height="16.5"/>
+                                            <rect key="frame" x="75" y="37" width="33" height="17"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dXU-9d-UFZ">
+                                            <rect key="frame" x="13" y="19" width="50" height="50"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="dXU-9d-UFZ" firstAttribute="top" secondItem="hav-qH-b66" secondAttribute="top" constant="19" id="5KP-zS-xBD"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5zt-Hh-MbX" secondAttribute="trailing" constant="20" symbolic="YES" id="7zj-ef-ZeC"/>
+                                        <constraint firstAttribute="bottom" secondItem="dXU-9d-UFZ" secondAttribute="bottom" constant="20.5" id="DPq-QO-8d0"/>
                                         <constraint firstItem="5zt-Hh-MbX" firstAttribute="top" secondItem="hav-qH-b66" secondAttribute="topMargin" id="IZO-rN-1tH"/>
+                                        <constraint firstItem="dXU-9d-UFZ" firstAttribute="leading" secondItem="hav-qH-b66" secondAttribute="leading" constant="13" id="Lev-1A-6Ls"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="CWl-jJ-jut" secondAttribute="trailing" constant="40" id="MRC-Qu-Cpz"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sgn-6w-9NX" secondAttribute="trailingMargin" id="Pj2-ja-3WX"/>
                                         <constraint firstItem="CWl-jJ-jut" firstAttribute="top" secondItem="Sgn-6w-9NX" secondAttribute="bottom" constant="5" id="SYE-oL-rPD"/>
                                         <constraint firstItem="Sgn-6w-9NX" firstAttribute="top" secondItem="5zt-Hh-MbX" secondAttribute="bottom" constant="2" id="Tdp-Vx-46R"/>
                                         <constraint firstItem="Sgn-6w-9NX" firstAttribute="leading" secondItem="hav-qH-b66" secondAttribute="leadingMargin" constant="59" id="a9w-Av-497"/>
                                         <constraint firstItem="5zt-Hh-MbX" firstAttribute="leading" secondItem="hav-qH-b66" secondAttribute="leadingMargin" constant="59" id="aBT-p3-cCh"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="CWl-jJ-jut" secondAttribute="trailing" constant="40" id="dm3-qr-tcq"/>
+                                        <constraint firstItem="5zt-Hh-MbX" firstAttribute="leading" secondItem="dXU-9d-UFZ" secondAttribute="trailing" constant="12" id="nze-9n-14M"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outlet property="hostNameLabel" destination="5zt-Hh-MbX" id="onR-Kp-1ag"/>
                                     <outlet property="ipAddrLabel" destination="CWl-jJ-jut" id="VmW-jw-7Tl"/>
+                                    <outlet property="onlineImageView" destination="dXU-9d-UFZ" id="ICA-8Z-1QN"/>
                                     <outlet property="playerNameLabel" destination="Sgn-6w-9NX" id="Ihk-En-MVe"/>
                                     <outletCollection property="gestureRecognizers" destination="N6q-Cf-YK0" appends="YES" id="W5T-xq-vgq"/>
                                     <outletCollection property="gestureRecognizers" destination="Mmi-X4-Dxh" appends="YES" id="M0r-OX-keb"/>
@@ -83,6 +93,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="pZc-jK-dkb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                     <connections>
                         <segue destination="dlh-us-HIF" kind="show" identifier="ShowAroioListConfig" id="FrG-sq-zz4"/>
                     </connections>
@@ -99,7 +112,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2059" y="466"/>
+            <point key="canvasLocation" x="2058.4000000000001" y="465.51724137931041"/>
         </scene>
         <!--Item-->
         <scene sceneID="9N5-mJ-Esg">

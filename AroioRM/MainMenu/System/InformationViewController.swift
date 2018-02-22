@@ -20,9 +20,9 @@ class InformationView: UIView {
     
     override func awakeFromNib() {
         
-        self.systemRuntimeLabel.text = AroioObject.aroio?.getUserconfigParameter(request: "UPTIME")
+        self.systemRuntimeLabel.text = AroioObject.aroio?.getUserconfigValue(value: "UPTIME")
         
-        let squeezeAddr = AroioObject.aroio?.getUserconfigParameter(request: "LMSADDRESS")
+        let squeezeAddr = AroioObject.aroio?.getUserconfigValue(value: "LMSADDRESS")
         
         if squeezeAddr != "" {
             self.squeezeServerLabel.text = squeezeAddr
@@ -30,11 +30,11 @@ class InformationView: UIView {
             self.squeezeServerLabel.text = "Kein Squeezeserver vorhanden"
         }
         
-        if AroioObject.aroio?.getUserconfigParameter(request: "CARRIERSTATE") == "1\n" {
-            self.macLanLabel.text = AroioObject.aroio?.getUserconfigParameter(request: "MACLAN")
+        if AroioObject.aroio?.getUserconfigValue(value: "CARRIERSTATE") == "1\n" {
+            self.macLanLabel.text = AroioObject.aroio?.getUserconfigValue(value: "MACLAN")
             self.macWiFiLabel.text = "Keine WiFi Verbindung"
         } else {
-            self.macWiFiLabel.text = AroioObject.aroio?.getUserconfigParameter(request: "MACWIFI")
+            self.macWiFiLabel.text = AroioObject.aroio?.getUserconfigValue(value: "MACWIFI")
             self.macLanLabel.text = "Keine LAN Verbindung"
         }
 

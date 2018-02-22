@@ -26,7 +26,7 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
     
     override func awakeFromNib() {
         
-        let brutefir = (AroioObject.aroio?.getUserconfigParameter(request: "BRUTEFIR"))!
+        let brutefir = (AroioObject.aroio?.getUserconfigValue(value: "BRUTEFIR"))!
         
         if brutefir == "ON\n" {
             self.convolutionSwitch.isOn = true
@@ -42,7 +42,7 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
         
         //Cast active Filter Variable to int for tableRow
         
-        defCoeff = (AroioObject.aroio?.getUserconfigParameter(request: "DEF_COEFF"))!
+        defCoeff = (AroioObject.aroio?.getUserconfigValue(value: "DEF_COEFF"))!
         if defCoeff != "" {
             defCoeffInt = Int(String(defCoeff.filter { !" \n".contains($0) }))!
         }
@@ -64,10 +64,10 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
         
         if self.convolutionSwitch.isOn == true {
             self.bankTableView.reloadData()
-            AroioObject.aroio?.sendRequestToSocket(request: "BRUTEFIR", newValue: "ON")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "BRUTEFIR", newValue: "ON")
         } else {
             self.bankTableView.reloadData()
-            AroioObject.aroio?.sendRequestToSocket(request: "BRUTEFIR", newValue: "OFF")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "BRUTEFIR", newValue: "OFF")
         }
     }
     
@@ -110,9 +110,9 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
             cell.bankSwitch.isOn = true
         }
         
-        cell.bankNoteTextField.text = (AroioObject.aroio?.getUserconfigParameter(request: "COEFF_COMMENT\(indexPath.row)"))!
-        cell.bankFilterSelectionButton.setTitle((AroioObject.aroio?.getUserconfigParameter(request: "COEFF_NAME\(indexPath.row)"))!, for: .normal)
-        cell.bankVolumeTextField.text = (AroioObject.aroio?.getUserconfigParameter(request: "COEFF_ATT\(indexPath.row)"))!
+        cell.bankNoteTextField.text = (AroioObject.aroio?.getUserconfigValue(value: "COEFF_COMMENT\(indexPath.row)"))!
+        cell.bankFilterSelectionButton.setTitle((AroioObject.aroio?.getUserconfigValue(value: "COEFF_NAME\(indexPath.row)"))!, for: .normal)
+        cell.bankVolumeTextField.text = (AroioObject.aroio?.getUserconfigValue(value: "COEFF_ATT\(indexPath.row)"))!
 
         cell.bankSwitch.tag = indexPath.row
         cell.bankSwitch.addTarget(self, action: #selector(ConvolverView.bankSwitchChanged), for: .valueChanged)
@@ -138,7 +138,7 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
         for cell in self.bankTableView.visibleCells {
             let customCell = cell as? BankTableViewCell
             if index == sender.tag  {
-                AroioObject.aroio?.sendRequestToSocket(request: "DEF_COEFF", newValue: String(sender.tag))
+                AroioObject.aroio?.changeValueInUserconfig(oldValue: "DEF_COEFF", newValue: String(sender.tag))
                 customCell?.bankSwitch.isOn = true
                 print("cell with tag: \(sender.tag)")
             } else {
@@ -148,7 +148,7 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
         }
   }
     @objc func bankNoteTextFieldEditingDidEnd(sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "COEFF_COMMENT\(sender.tag)", newValue: sender.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "COEFF_COMMENT\(sender.tag)", newValue: sender.text!)
     }
     @objc func bankFilterSelectionButtonPressed(sender: UIButton) {
 
@@ -159,17 +159,17 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
         filterPicker.show {  (selections: [Int : String]) -> Void in
             if let name = selections[0] {
                 sender.setTitle(name, for: .normal)
-                AroioObject.aroio?.sendRequestToSocket(request: "COEFF_NAME\(sender.tag)", newValue: name)
+                AroioObject.aroio?.changeValueInUserconfig(oldValue: "COEFF_NAME\(sender.tag)", newValue: name)
             }
         }
         
     }
     @objc func bankVolumeTextFieldEditingDidEnd(sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "COEFF_ATT\(sender.tag)", newValue: sender.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "COEFF_ATT\(sender.tag)", newValue: sender.text!)
     }
     
     func addFilterPickerData(){
-        let filterString = (AroioObject.aroio?.getData(request: "LS"))!
+        let filterString = (AroioObject.aroio?.getBiggerDataFromSocket(value: "LS"))!
         var filterArray = filterString.components(separatedBy: ".dbl\n")
  
         var index = 0

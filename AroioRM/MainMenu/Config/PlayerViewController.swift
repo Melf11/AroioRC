@@ -41,11 +41,11 @@ class PlayerView: UIView, UITextFieldDelegate {
         serverportTextField.tag = 3
         serverportTextField.keyboardType = .phonePad
 
-        self.servernameTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "SERVERNAME")
-        self.serveruserTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "SQUEEZEUSER")
-        self.serverpasswordTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "SQUEEZEPWD")
-        self.serverportTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "SERVERPORT")
-        self.audioPlayerButton.setTitle(AroioObject.aroio?.getUserconfigParameter(request: "AUDIOPLAYER"), for: .normal)
+        self.servernameTextField.text = AroioObject.aroio?.getUserconfigValue(value: "SERVERNAME")
+        self.serveruserTextField.text = AroioObject.aroio?.getUserconfigValue(value: "SQUEEZEUSER")
+        self.serverpasswordTextField.text = AroioObject.aroio?.getUserconfigValue(value: "SQUEEZEPWD")
+        self.serverportTextField.text = AroioObject.aroio?.getUserconfigValue(value: "SERVERPORT")
+        self.audioPlayerButton.setTitle(AroioObject.aroio?.getUserconfigValue(value: "AUDIOPLAYER"), for: .normal)
     }
 
     override init(frame: CGRect) {
@@ -59,16 +59,16 @@ class PlayerView: UIView, UITextFieldDelegate {
     //MARK: Actions
     
     @IBAction func hostnameTextFieldEditingDidEnd(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "SERVERNAME", newValue: servernameTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "SERVERNAME", newValue: servernameTextField.text!)
     }
     @IBAction func usernameTextFieldEditingDidEnd(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "SQUEEZEUSER", newValue: serveruserTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "SQUEEZEUSER", newValue: serveruserTextField.text!)
     }
     @IBAction func passwordTextFieldEditingDidEnd(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "SQUEEZEPWD", newValue: serverpasswordTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "SQUEEZEPWD", newValue: serverpasswordTextField.text!)
     }
     @IBAction func portTextFieldEditingDidEnd(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "SERVERPORT", newValue: serverportTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "SERVERPORT", newValue: serverportTextField.text!)
     }
     @IBAction func lmsWebinterfaceButtonPressed(_ sender: UIButton) {
         let rootVC = UIApplication.shared.keyWindow?.rootViewController
@@ -87,7 +87,7 @@ class PlayerView: UIView, UITextFieldDelegate {
         playerPicker.show { selections in
             if let _ = selections[0], let name = selections[1] {
                 self.audioPlayerButton.setTitle(name, for:[])
-                AroioObject.aroio?.sendRequestToSocket(request: "AUDIOPLAYER", newValue: name)
+                AroioObject.aroio?.changeValueInUserconfig(oldValue: "AUDIOPLAYER", newValue: name)
             }
             
         }

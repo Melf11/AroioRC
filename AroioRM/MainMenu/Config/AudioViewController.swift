@@ -30,13 +30,13 @@ class AudioView: UIView, UITextFieldDelegate{
         playerNameTextField.delegate = self
         playerNameTextField.returnKeyType = .done
         
-        self.playerNameTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "PLAYERNAME")
-        self.volumeButton.setTitle(AroioObject.aroio?.getUserconfigParameter(request: "VOLUME"), for: .normal)
-        self.jackPuffer.setTitle(AroioObject.aroio?.getUserconfigParameter(request: "JACKPUFFER"), for: .normal)
-        self.soundDevice.setTitle(AroioObject.aroio?.getUserconfigParameter(request: "SOUNDCARD"), for: .normal)
-        self.hardwareEnvironmentButton.setTitle(AroioObject.aroio?.getUserconfigParameter(request: "PLATFORM"), for: .normal)
+        self.playerNameTextField.text = AroioObject.aroio?.getUserconfigValue(value: "PLAYERNAME")
+        self.volumeButton.setTitle(AroioObject.aroio?.getUserconfigValue(value: "VOLUME"), for: .normal)
+        self.jackPuffer.setTitle(AroioObject.aroio?.getUserconfigValue(value: "JACKPUFFER"), for: .normal)
+        self.soundDevice.setTitle(AroioObject.aroio?.getUserconfigValue(value: "SOUNDCARD"), for: .normal)
+        self.hardwareEnvironmentButton.setTitle(AroioObject.aroio?.getUserconfigValue(value: "PLATFORM"), for: .normal)
         
-        let clean: String = (AroioObject.aroio?.getUserconfigParameter(request: "MSCODING"))!
+        let clean: String = (AroioObject.aroio?.getUserconfigValue(value: "MSCODING"))!
         
         if clean == "ON\n" {
             self.cleanSwitch.isOn = true
@@ -44,7 +44,7 @@ class AudioView: UIView, UITextFieldDelegate{
             self.cleanSwitch.isOn = false
         }
         
-        let brutefir = (AroioObject.aroio?.getUserconfigParameter(request: "BRUTEFIR"))!
+        let brutefir = (AroioObject.aroio?.getUserconfigValue(value: "BRUTEFIR"))!
         
         if brutefir == "ON\n" {
             self.convolutionSwitch.isOn = true
@@ -70,7 +70,7 @@ class AudioView: UIView, UITextFieldDelegate{
     //MARK: Text Field Methods
     
     @IBAction func textFieldDidEndEditing(_ textField: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "PLAYERNAME", newValue: textField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "PLAYERNAME", newValue: textField.text!)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -81,17 +81,17 @@ class AudioView: UIView, UITextFieldDelegate{
     //MARK: Actions
     @IBAction func changeCleaner(_ sender: UISwitch) {
         if self.cleanSwitch.isOn == false {
-            AroioObject.aroio?.sendRequestToSocket(request: "MSCODING", newValue: "OFF")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "MSCODING", newValue: "OFF")
         } else {
-            AroioObject.aroio?.sendRequestToSocket(request: "MSCODING", newValue: "ON")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "MSCODING", newValue: "ON")
         }
     }
     
     @IBAction func changeConvolution(_ sender: UISwitch) {
         if self.convolutionSwitch.isOn == false {
-            AroioObject.aroio?.sendRequestToSocket(request: "BRUTEFIR", newValue: "OFF")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "BRUTEFIR", newValue: "OFF")
         } else {
-            AroioObject.aroio?.sendRequestToSocket(request: "BRUTEFIR", newValue: "ON")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "BRUTEFIR", newValue: "ON")
         }
     }
     
@@ -109,7 +109,7 @@ class AudioView: UIView, UITextFieldDelegate{
         volumePicker.show {  (selections: [Int : String]) -> Void in
             if let name = selections[0] {
                 self.volumeButton.setTitle(name, for: .normal)
-                AroioObject.aroio?.sendRequestToSocket(request: "VOLUME", newValue: name)
+                AroioObject.aroio?.changeValueInUserconfig(oldValue: "VOLUME", newValue: name)
             }
         }
     }
@@ -125,7 +125,7 @@ class AudioView: UIView, UITextFieldDelegate{
         jackPicker.show {  (selections: [Int : String]) -> Void in
             if let name = selections[0] {
                 self.jackPuffer.setTitle(name, for: .normal)
-                AroioObject.aroio?.sendRequestToSocket(request: "JACKBUFFER", newValue: name)
+                AroioObject.aroio?.changeValueInUserconfig(oldValue: "JACKBUFFER", newValue: name)
             }
         }
     }
@@ -141,7 +141,7 @@ class AudioView: UIView, UITextFieldDelegate{
         soundPicker.show {  (selections: [Int : String]) -> Void in
             if let name = selections[0] {
                 self.soundDevice.setTitle(name, for: .normal)
-                AroioObject.aroio?.sendRequestToSocket(request: "SOUNDCARD", newValue: name)
+                AroioObject.aroio?.changeValueInUserconfig(oldValue: "SOUNDCARD", newValue: name)
             }
         }
     }
@@ -157,7 +157,7 @@ class AudioView: UIView, UITextFieldDelegate{
         hardwarePicker.show {  (selections: [Int : String]) -> Void in
             if let name = selections[0] {
                 self.hardwareEnvironmentButton.setTitle(name, for: .normal)
-                AroioObject.aroio?.sendRequestToSocket(request: "PLATFORM", newValue: name)
+                AroioObject.aroio?.changeValueInUserconfig(oldValue: "PLATFORM", newValue: name)
             }
         }
     }

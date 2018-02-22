@@ -21,7 +21,7 @@ class UpdateView: UIView {
     
     override func awakeFromNib() {
 
-        self.beta = (AroioObject.aroio?.getUserconfigParameter(request: "USEBETA"))!
+        self.beta = (AroioObject.aroio?.getUserconfigValue(value: "USEBETA"))!
         if beta == "ON\n" {
             self.betaSwitch.isOn = true
            // self.updateVersionLabel.text = AroioObject.aroio?.getUserconfigParameter(request: "UPDATECHECKBETA")
@@ -29,7 +29,7 @@ class UpdateView: UIView {
             self.betaSwitch.isOn = false
           //  self.updateVersionLabel.text = AroioObject.aroio?.getUserconfigParameter(request: "UPDATECHECK")
         }
-        self.currentVersionLabel.text = AroioObject.aroio?.getUserconfigParameter(request: "UPDATELOCAL")
+        self.currentVersionLabel.text = AroioObject.aroio?.getUserconfigValue(value: "UPDATELOCAL")
 
         
     }
@@ -54,26 +54,26 @@ class UpdateView: UIView {
     @IBAction func checkBeta(_ sender: UISwitch) {
         
         if self.betaSwitch.isOn == false {
-            AroioObject.aroio?.sendRequestToSocket(request: "USEBETA", newValue: "OFF")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "USEBETA", newValue: "OFF")
             self.beta = "OFF\n"
         } else {
-            AroioObject.aroio?.sendRequestToSocket(request: "USEBETA", newValue: "ON")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "USEBETA", newValue: "ON")
             self.beta = "ON\n"
         }
     }
     
     @IBAction func checkVersionPressed(_ sender: UIButton) {
 
-        self.currentVersionLabel.text = AroioObject.aroio?.getUserconfigParameter(request: "UPDATELOCAL")
+        self.currentVersionLabel.text = AroioObject.aroio?.getUserconfigValue(value: "UPDATELOCAL")
         
         if self.beta == "ON\n" {
             print("beta is ON")
 
-            self.updateVersionLabel.text =  AroioObject.aroio?.getUserconfigParameter(request: "UPDATECHECKBETA").components(separatedBy: "\\").first
+            self.updateVersionLabel.text =  AroioObject.aroio?.getUserconfigValue(value: "UPDATECHECKBETA").components(separatedBy: "\\").first
             
         } else {
             print("beta is OFF")
-            self.updateVersionLabel.text = AroioObject.aroio?.getUserconfigParameter(request: "UPDATECHECK")
+            self.updateVersionLabel.text = AroioObject.aroio?.getUserconfigValue(value: "UPDATECHECK")
         }
     }
     
@@ -82,7 +82,7 @@ class UpdateView: UIView {
         let alertController = UIAlertController(title: "Systemupdate", message: "Soll das Update wirklich ausgeführt werden?", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
-            AroioObject.aroio?.getUserconfigParameter(request: "UPDATEUPDATE")
+            AroioObject.aroio?.getUserconfigValue(value: "UPDATEUPDATE")
         }
         let cancelAction = UIAlertAction(title: "Abbrechen", style: UIAlertActionStyle.cancel) {
             UIAlertAction in

@@ -53,14 +53,14 @@ class NetworkView: UIView, UITextFieldDelegate {
         dnsTextField.tag = 5
         
         
-        self.hostnameTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "HOSTNAME")
-        self.passwordTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "USERPASSWD")
-        self.ipTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "IPADDR")
-        self.netmaskTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "NETMASK")
-        self.gatewayTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "GATEWAY")
-        self.dnsTextField.text = AroioObject.aroio?.getUserconfigParameter(request: "DNSSERV")
+        self.hostnameTextField.text = AroioObject.aroio?.getUserconfigValue(value: "HOSTNAME")
+        self.passwordTextField.text = AroioObject.aroio?.getUserconfigValue(value: "USERPASSWD")
+        self.ipTextField.text = AroioObject.aroio?.getUserconfigValue(value: "IPADDR")
+        self.netmaskTextField.text = AroioObject.aroio?.getUserconfigValue(value: "NETMASK")
+        self.gatewayTextField.text = AroioObject.aroio?.getUserconfigValue(value: "GATEWAY")
+        self.dnsTextField.text = AroioObject.aroio?.getUserconfigValue(value: "DNSSERV")
         
-        let dhcp: String = (AroioObject.aroio?.getUserconfigParameter(request: "DHCP"))!
+        let dhcp: String = (AroioObject.aroio?.getUserconfigValue(value: "DHCP"))!
         if dhcp == "ON\n" {
             self.dhcpSwitch.isOn = true
             self.staticIpView.isHidden = true
@@ -86,36 +86,36 @@ class NetworkView: UIView, UITextFieldDelegate {
     @IBAction func dhcpSwitch(_ sender: UISwitch) {
         if self.dhcpSwitch.isOn == true {
             self.staticIpView.isHidden = true
-            AroioObject.aroio?.sendRequestToSocket(request: "DHCP", newValue: "ON")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "DHCP", newValue: "ON")
         } else {
             self.staticIpView.isHidden = false
-            AroioObject.aroio?.sendRequestToSocket(request: "DHCP", newValue: "OFF")
+            AroioObject.aroio?.changeValueInUserconfig(oldValue: "DHCP", newValue: "OFF")
         }
         
     }
     
     @IBAction func hostnameTextFieldDidEndEditing(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "HOSTNAME", newValue: hostnameTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "HOSTNAME", newValue: hostnameTextField.text!)
     }
     
     @IBAction func passwordTextFieldDidEndEditing(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "USERPASSWD", newValue: passwordTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "USERPASSWD", newValue: passwordTextField.text!)
     }
     
     @IBAction func ipTextFieldDidEndEditing(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "IPADDR", newValue: ipTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "IPADDR", newValue: ipTextField.text!)
     }
     
     @IBAction func gatewayTextFieldDidEndEditing(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "GATEWAY", newValue: gatewayTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "GATEWAY", newValue: gatewayTextField.text!)
     }
     
     @IBAction func maskTextFieldDidEndEditing(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "NETMASK", newValue: netmaskTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "NETMASK", newValue: netmaskTextField.text!)
     }
     
     @IBAction func dnsTextFieldDidEndEditing(_ sender: UITextField) {
-        AroioObject.aroio?.sendRequestToSocket(request: "DNSSERV", newValue: dnsTextField.text!)
+        AroioObject.aroio?.changeValueInUserconfig(oldValue: "DNSSERV", newValue: dnsTextField.text!)
     }
     @IBAction func restartNetworkButtonPressed(_ sender: UIButton) {
         
@@ -123,7 +123,7 @@ class NetworkView: UIView, UITextFieldDelegate {
         let alertController = UIAlertController(title: "Netzwerk neustarten (System Reboot)", message: "Soll das Netzwerk mit den oben angegebenen Einstellungen neu aufgebaut werden?", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
-            AroioObject.aroio?.getUserconfigParameter(request: "REBOOT")
+            AroioObject.aroio?.getUserconfigValue(value: "REBOOT")
         }
         let cancelAction = UIAlertAction(title: "Abbrechen", style: UIAlertActionStyle.cancel) {
             UIAlertAction in

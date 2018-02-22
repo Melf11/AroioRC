@@ -19,10 +19,10 @@ class RoomCorrectionView: UIView {
         //   commonInit()
     }
     @IBAction func runMessurement(_ sender: UIButton) {
-        AroioObject.aroio?.getUserconfigParameter(request: "STARTMESSUREMENT")
+        AroioObject.aroio?.getUserconfigValue(value: "STARTMESSUREMENT")
     }
     @IBAction func stopMessurement(_ sender: UIButton) {
-        AroioObject.aroio?.getUserconfigParameter(request: "CANCELMESSUREMENT")
+        AroioObject.aroio?.getUserconfigValue(value: "CANCELMESSUREMENT")
     }
 }
 

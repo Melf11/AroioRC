@@ -89,10 +89,10 @@ class Aroio: NSObject, NSCoding {
     // "response" is to define the action for the server
     // "default" has to be the third value because the server is expecting 3 values
     // \n has to be at the end to seperate the different requests
-    
-    func getUserconfigParameter(request: String) -> String{
 
-        let response = "response;\(request);default;\n"
+    func getUserconfigValue(value: String) -> String{
+
+        let response = "response;\(value);default;\n"
         let data: Data = response.data(using: String.Encoding.utf8)!
         switch client.send(data: data) {
         case .success:
@@ -115,15 +115,41 @@ class Aroio: NSObject, NSCoding {
         
         return ""
     }
+    // same function as befor just for much more data
+    func getBiggerDataFromSocket(value: String) -> String{
+        
+        let response = "response;\(value);default;\n"
+        let data: Data = response.data(using: String.Encoding.utf8)!
+        switch client.send(data: data) {
+        case .success:
+            os_log("Send 'respose' successful, receive answer", log: OSLog.default, type: .debug)
+            
+            if let data = client.read(1024*100, timeout: 1){
+                if let answer = String(bytes: data, encoding: .utf8) {
+                    
+                    if (answer == "\n"){
+                        return ""
+                    } else {
+                        return answer
+                    }
+                }
+            }
+        case .failure(let error):
+            os_log("Could not send 'request' to server.", log: OSLog.default, type: .error)
+            print("Error: \(error)")
+        }
+        
+        return ""
+    }
     
     // sending a request to aroio socketserver to change a parameter in userconfig.txt on AroioOS
     // Request forn is a string: "change;PARAMETER;newValue\n"
     // "change" is to define the action for the server
     // newValue is the new parameter
     // \n has to be at the end to seperate the different requests
-    func sendRequestToSocket(request: String, newValue: String){
+    func changeValueInUserconfig(oldValue: String, newValue: String){
 
-        let response = "change;\(request);\(newValue);\n"
+        let response = "change;\(oldValue);\(newValue);\n"
         let data = response.data(using: String.Encoding.utf8)!
         
         switch client.send(data: data) {
