@@ -68,19 +68,26 @@ class AroioTableConfigViewController: UIViewController, UITextFieldDelegate, UIT
         bonjourTableView.addGestureRecognizer(tapRecognizer)
         bonjourTableView.delegate = self
         bonjourTableView.dataSource = self
-        
+
         ip0TextField.delegate = self
         ip0TextField.keyboardType = .numberPad
+        ip0TextField.returnKeyType = .next
+        ip0TextField.tag = 0
         
         ip1TextField.delegate = self
         ip1TextField.keyboardType = .numberPad
+        ip1TextField.returnKeyType = .next
+        ip1TextField.tag = 1
         
         ip2TextField.delegate = self
         ip2TextField.keyboardType = .numberPad
+        ip2TextField.returnKeyType = .next
+        ip2TextField.tag = 2
         
         ip3TextField.delegate = self
         ip3TextField.keyboardType = .numberPad
-       
+        ip3TextField.returnKeyType = .done
+        ip3TextField.tag = 3
         
         // setup views if editing an existing meal
         if let aroio = aroio {
