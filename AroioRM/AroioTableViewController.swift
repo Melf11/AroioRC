@@ -38,7 +38,7 @@ class AroioTableViewController: UITableViewController {
         } else {
             os_log("No Aroio's stored!",  log: OSLog.default, type: .debug)
         }
-        self.refreshControl?.addTarget(self, action: #selector(refresh), for: UIControlEvents.valueChanged)
+        self.refreshControl?.addTarget(self, action: #selector(self.refresh), for: UIControlEvents.valueChanged)
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,6 +61,9 @@ class AroioTableViewController: UITableViewController {
             fatalError("The dequeued cell is not an instance of AroioTableViewCell")
         }
         let aroio = aroios[indexPath.row]
+        
+        //TODO: code a usefull threading
+
         if aroio.connectToSocket() {
             cell.imageView?.image = UIImage(named: "Online")!
             aroio.disconnectFromSocket()
@@ -68,6 +71,7 @@ class AroioTableViewController: UITableViewController {
             cell.imageView?.image = UIImage(named: "Offline")!
             aroio.disconnectFromSocket()
         }
+
         cell.contentView.isUserInteractionEnabled = false;
         cell.hostNameLabel.text = aroio.hostName
         cell.ipAddrLabel.text = aroio.ipAddr
@@ -228,6 +232,15 @@ class AroioTableViewController: UITableViewController {
     {
         self.tableView.reloadData()
         self.refreshControl?.endRefreshing()
+    }
+    
+    //MARK: Threading
+    func BG(_ block: @escaping ()->Void) {
+        DispatchQueue.global(qos: .default).async(execute: block)
+    }
+    
+    func UI(_ block: @escaping ()->Void) {
+        DispatchQueue.main.async(execute: block)
     }
     
     //MARK: Private Methods
