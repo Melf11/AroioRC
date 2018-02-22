@@ -106,8 +106,6 @@ class Aroio: NSObject, NSCoding {
                     } else {
                         return answer
                     }
-                    
-                    return answer
                 }
             }
         case .failure(let error):
@@ -141,7 +139,6 @@ class Aroio: NSObject, NSCoding {
 
     func disconnectFromSocket(){
         client.close()
-        os_log("Socket Client successfully closed.", log: OSLog.default, type: .debug)
     }
     
     
