@@ -14,7 +14,7 @@ Melf
 ```
 perl /appReceiver.pl
 ```
-to watch a through the app video download AppThrough.mp4
+to watch a through the app video download AppVideo.mp4
 
 Screenshot Examples:
 
