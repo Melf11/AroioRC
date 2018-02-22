@@ -112,70 +112,46 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
         
         cell.bankNoteTextField.text = (AroioObject.aroio?.getUserconfigParameter(request: "COEFF_COMMENT\(indexPath.row)"))!
         cell.bankFilterSelectionButton.setTitle((AroioObject.aroio?.getUserconfigParameter(request: "COEFF_NAME\(indexPath.row)"))!, for: .normal)
-        cell.bankVolumeTextField.text = "-\((AroioObject.aroio?.getUserconfigParameter(request: "COEFF_ATT\(indexPath.row)"))!)"
-        
-        // change functions für cell fields
+        cell.bankVolumeTextField.text = (AroioObject.aroio?.getUserconfigParameter(request: "COEFF_ATT\(indexPath.row)"))!
+
         cell.bankSwitch.tag = indexPath.row
         cell.bankSwitch.addTarget(self, action: #selector(ConvolverView.bankSwitchChanged), for: .valueChanged)
         
         cell.bankNoteTextField.tag = indexPath.row
         cell.bankNoteTextField.addTarget(self, action: #selector(ConvolverView.bankNoteTextFieldEditingDidEnd), for: .editingDidEnd)
+        cell.bankNoteTextField.returnKeyType = .done
         
         cell.bankFilterSelectionButton.tag = indexPath.row
         cell.bankFilterSelectionButton.addTarget(self, action: #selector(ConvolverView.bankFilterSelectionButtonPressed), for: .touchUpInside)
         
         cell.bankVolumeTextField.tag = indexPath.row
         cell.bankVolumeTextField.addTarget(self, action: #selector(ConvolverView.bankVolumeTextFieldEditingDidEnd), for: .editingDidEnd)
-        
+        cell.bankVolumeTextField.keyboardType = .numberPad
+        cell.bankVolumeTextField.returnKeyType = .done
         
         return cell
     }
-    
-    func changeSwitchesInTableView(cellFromTable: UITableViewCell){
-        //TODO: Not working for now
-        
+
+    @objc func bankSwitchChanged(sender: UISwitch) {
+
+        var index = 0
         for cell in self.bankTableView.visibleCells {
-            
-            if cell == cellFromTable  {
-                
-                bankTableView.indexPath(for: cellFromTable)
-            } else {
-                
-            }
-        }
-    }
-    
-    @objc func bankSwitchChanged(sender: UISwitch, cell: UITableViewCell) {
-        //TODO: Make switches that only one is active
-        AroioObject.aroio?.sendRequestToSocket(request: "DEF_COEFF", newValue: String(sender.tag))
-        
-        changeSwitchesInTableView(cellFromTable: cell)
-        
-        for index in 0...9 {
+            let customCell = cell as? BankTableViewCell
             if index == sender.tag  {
-                sender.isOn = true
+                AroioObject.aroio?.sendRequestToSocket(request: "DEF_COEFF", newValue: String(sender.tag))
+                customCell?.bankSwitch.isOn = true
+                print("cell with tag: \(sender.tag)")
             } else {
-                
+                customCell?.bankSwitch.isOn = false
             }
+            index += 1
         }
-        
-        if self.convolutionSwitch.isOn == true {
-            self.bankTableView.reloadData()
-            AroioObject.aroio?.sendRequestToSocket(request: "DEF_COEFF\(sender.tag)", newValue: "ON")
-        } else {
-            self.bankTableView.reloadData()
-            AroioObject.aroio?.sendRequestToSocket(request: "BRUTEFIR", newValue: "OFF")
-        }
-        
-        AroioObject.aroio?.sendRequestToSocket(request: "COEFF_NAME\(sender.tag)", newValue: "ON")
-    }
+  }
     @objc func bankNoteTextFieldEditingDidEnd(sender: UITextField) {
         AroioObject.aroio?.sendRequestToSocket(request: "COEFF_COMMENT\(sender.tag)", newValue: sender.text!)
     }
     @objc func bankFilterSelectionButtonPressed(sender: UIButton) {
-        //TODO: Put picker into fields with array
-        AroioObject.aroio?.sendRequestToSocket(request: "COEFF_NAME\(sender.tag)", newValue: "TEST")
-     
+
         let filterPicker = McPicker(data: self.filterPickerData)
         filterPicker.toolbarButtonsColor = .white
         filterPicker.toolbarBarTintColor = UIColor(red:0.00, green:0.50, blue:0.50, alpha:1.0)
@@ -183,7 +159,7 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
         filterPicker.show {  (selections: [Int : String]) -> Void in
             if let name = selections[0] {
                 sender.setTitle(name, for: .normal)
-                AroioObject.aroio?.sendRequestToSocket(request: "VOLUME", newValue: name)
+                AroioObject.aroio?.sendRequestToSocket(request: "COEFF_NAME\(sender.tag)", newValue: name)
             }
         }
         
@@ -193,8 +169,16 @@ class ConvolverView: UIView, UITableViewDataSource, UITableViewDelegate, UITextF
     }
     
     func addFilterPickerData(){
-        for index in 0...9 {
-            self.filterPickerData[0].append((AroioObject.aroio?.getUserconfigParameter(request: "COEFF_NAME\(index)"))!)
+        let filterString = (AroioObject.aroio?.getData(request: "LS"))!
+        var filterArray = filterString.components(separatedBy: ".dbl\n")
+ 
+        var index = 0
+        for string in filterArray {
+            if (string.range(of: "R96") != nil){
+                filterArray.remove(at: index + 1)
+                self.filterPickerData[0].append(filterArray[index].replacingOccurrences(of: "L96", with: ""))
+                index += 1
+            }
         }
     }
     
